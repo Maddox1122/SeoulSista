@@ -1,0 +1,8 @@
+.title {
+    text-shadow: 0 0 0.3em #8BC34A;
+}
+
+.nav-links {
+    /* -webkit-text-stroke: 0.01em #8BC34A; */
+    text-shadow: 0 0 0.3em hsl(0, 0%, 100%);
+}
