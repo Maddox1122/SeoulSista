@@ -1,0 +1,4 @@
+#f0bebb; Roze
+#231f20; Bruin
+#044330; Groen
+#333333; Grijs

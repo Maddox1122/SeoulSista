@@ -9,19 +9,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-slate-800 text-white">
+<body class="text-[#F0EEEE] bg-[#231f20] select-none">
     <header class="relative text-xl">
-        <div class="absolute z-[2] right-0">
-            <ul class="flex flex-row px-8 py-4">
-                <li class="mr-12 cursor-pointer hover:scale-150 duration-300"><a href="#">Menu</a></li>
-                <li class="mr-12 cursor-pointer hover:scale-150 duration-300"><a href="#">Bestellen</a></li>
-                <li class="mr-12 cursor-pointer hover:scale-150 duration-300"><a href="#">Info</a></li>
+        <div class="absolute z-[2] right-0 ">
+            <ul class="flex flex-col px-8 py-4 sm:flex-row">
+                <li class="mr-0 cursor-pointer hover:scale-150 duration-300 sm:mr-12"><a href="#">Menu</a></li>
+                <li class="mr-0 cursor-pointer hover:scale-150 duration-300 sm:mr-12"><a href="#">Bestellen</a></li>
+                <li class="mr-0 cursor-pointer hover:scale-150 duration-300 sm:mr-12"><a href="#">Info</a></li>
             </ul>
         </div>
-        <div class="absolute z-[1]">
-            <img class="" src="./Media/1625571341-99193-1004.png" alt="Header-Img">
-        </div>  
+        <div class="absolute z-[1] overflow-hidden h-[220px] w-[100vw]">
+            <img class="w-[100%]" src="./Media/Headerimg.jpg" alt="Header-Img">
+        </div>
+        <div class="absolute z-[3] left-0 top-[20px] text-5xl sm:left-[44.5%] sm:top-[70px]">
+            <h1>Seoul Sista</h2>
+        </div>
+        <div class="absolute z-[2] hidden md:block top-[35px] left-[36%]">
+            <img src="./Media/logo_transparant_5.png" alt="Logo Seoul Sista" width="150px">
+        </div>
     </header>
+    <section>
+
+    </section>
 </body>
 
 </html>
