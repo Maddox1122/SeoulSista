@@ -1,3 +1,7 @@
+html {
+    font-family: MuseoSans-300;
+}
+
 .hamburger::after,
 .hamburger::before {
     content: "";
