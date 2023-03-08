@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-NL">
 
 <head>
     <meta charset="UTF-8">
@@ -7,31 +7,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seoul Sista</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="shortcut icon" href="./Media/logo_transparant_5.png" type="image/x-icon">
 </head>
 
-<body class="bg-[#8D6E63] select-none">
-    <header class="relative text-2xl flex justify-center">
-        <div class="absolute z-[5] right-[0px] md:right-[60px] bg-[#8D6E63] pl-8 pr-8 rounded-lg mt-4 shadow-xl shadow-[#8BC34A]">
-            <ul class="flex flex-col py-4 sm:flex-row text-[#F5F5F5] nav-links">
-                <li class="py-2 cursor-pointer hover:scale-150 duration-300 sm:mr-12 opacity-70 hover:opacity-100"><a href="#">Menu</a></li>
-                <li class="py-2 cursor-pointer hover:scale-150 duration-300 sm:mr-12 opacity-70 hover:opacity-100"><a href="#">Bestellen</a></li>
-                <li class="py-2 cursor-pointer hover:scale-150 duration-300 opacity-70 hover:opacity-100"><a href="#">Info</a></li>
+<body class="h-screen bg-[#023f30] select-none overflowx-hidden">
+    <header class="text-white text-2xl bg-[#8D6E63] relative flex mx-auto w-[95vw] rounded-lg">
+        <div class="mr-6">
+            <!-- <div class="flex justify-end absolute right-5 top-[35px] bg-white w-[10vw] h-[5px] rounded-lg cursor-pointer hamburger"></div> -->
+            <ul class="flex justify-end absolute right-4 top-[7px] font-semibold">
+                <li class="p-4 duration-300 hover:scale-125"><a href="#">Menu</a></li>
+                <li class="p-4 duration-300 hover:scale-125"><a href="#">Bestellen</a></li>
+                <li class="p-4 duration-300 hover:scale-125"><a href="#">Info</a></li>
             </ul>
         </div>
-        <div class="absolute z-[1] overflow-hidden h-[220px] w-[95vw] rounded-lg mt-[10px]">
-            <img class="w-[100%]" src="./Media/Headerimg.jpg" alt="Header-Img">
+        <div class="">
+            <a class="max-[450px]:pointer-events-none" href="./index.html"><img class="py-2 max-[350px]:opacity-0" src="./Media/logo_transparant_5.png" alt="" width="75px"></a>
         </div>
-        <div class="title absolute z-[3] top-[50px] text-[5rem] ml-[30px] hidden sm:block md:self-center sm:top-[120px] text-[#8BC34A]">
-            <h1>Seoul Sista</h1>
-        </div>
-        <!-- <div class="absolute z-[2] hidden md:block top-[20px] left-[45%] md:left-[30%] lg:ml-[50px]">
-            <img src="./Media/logo_transparant_5.png" alt="Logo Seoul Sista" width="200px">
-        </div> -->
     </header>
-    <section>
+    <header
+        class="bg-[url('./Media/Headerimg.jpg')] flex items-center justify-center bg-top rounded-lg mx-auto w-[95vw] h-[25vh] mt-2">
+        <h2 class="text-green-500 text-[70px] font-extrabold">Seoul Sista</h2>
+    </header>
+    <section class="flex flex-row">
+        <div class="mt-4">
+            <img class="rounded-lg ml-[2.5dvw] width-[100%] h-auto outline outline-[#8D6E63] max-[1300px]:hidden"
+                src="./Media/Home-left.jpg" alt="" width="450px">
+        </div>
+        <div class="mt-3 p-2 bg-[#8D6E63] ml-3 rounded-lg w-[450px] text-center text-white flex items-center flex-col">
+            <h2 class="font-semibold text-[32px]">Informatie Seoul Sista</h2>
+            <p class="leading-7 max-w-[380px]">Seoul Sista is een Koreaans restaurant dat gevestigd is in het hart van
+                de stad. Het menu biedt een
+                verscheidenheid aan authentieke Koreaanse gerechten, waaronder bibimbap, bulgogi, kimchi jjigae en
+                tteokbokki. Het restaurant is bekend om zijn hoge kwaliteit van voedsel en service, evenals de warme en
+                gezellige sfeer.
 
+                Het interieur van het restaurant is modern en strak, met subtiele Koreaanse invloeden in het decor. Het
+                is een populaire plek voor zowel lunch als diner, en er is vaak een wachtrij tijdens piekuren.
+                Reserveren wordt aanbevolen om teleurstelling te voorkomen.
+
+                Seoul Sista heeft ook een aantal vegetarische en veganistische opties op het menu, waardoor het een
+                goede keuze is voor mensen met speciale dieetwensen. Bovendien is het restaurant betaalbaar en biedt het
+                waar voor uw geld.
+
+                Als u op zoek bent naar een heerlijke Koreaanse maaltijd in een gezellige omgeving, dan is Seoul Sista
+                zeker een bezoek waard!</p>
+        </div>
+        <div class="mt-4 max-[850px]:hidden">
+            <img class="rounded-lg ml-3 width-[100%] h-auto outline outline-[#8D6E63] hidden sm:block"
+                src="./Media/Seoul-Sista-Covid-mobile2.png" alt="" width="450px">
+                <div class="mt-3 p-2 bg-[#8D6E63] ml-3 rounded-lg w-[450px] text-center text-white flex items-center flex-col pb-8 hidden sm:block">
+                    <h2 class="font-semibold text-[32px]">Handleiding Corona &uarr;</h2>
+                    <p class="leading-[27px] max-w-[380px] mt-4 mx-auto">
+                        Voor de Handleiding voor corona kan u hier boven zien of ons persoonlijke een mailtje sturen <br>
+                        <span class="text-green-400 underline"><a href="mailto:89667@glr.nl">HIER</a></span>
+                    </p>
+                </div>
+        </div>
+        <div class="mt-3 p-2 bg-[#8D6E63] ml-3 rounded-lg w-[450px] text-center text-white flex items-center flex-col">
+            <h2 class="font-semibold text-[32px]">Seoul Sista Tijdens Corona</h2>
+            <p class="leading-[27px] max-w-[380px]">Seoul Sista is een Koreaans restaurant met meerdere locaties in Nederland. Tijdens de COVID-19 pandemie
+                heeft het restaurant verschillende maatregelen genomen om de veiligheid van klanten en personeel te
+                waarborgen.
+
+                Om eten te bestellen bij Seoul Sista kunnen klanten ervoor kiezen om het restaurant persoonlijk te
+                bezoeken en hun bestelling af te halen of te laten bezorgen, of om online te bestellen via de website
+                van het restaurant of via bezorgplatforms zoals Thuisbezorgd.nl of Uber Eats. Bij online bestellingen
+                kunnen klanten verschillende betaalmethoden kiezen, waaronder creditcard en iDeal.
+
+                Om de veiligheid van klanten te waarborgen heeft Seoul Sista strikte hygiëneprotocollen geïmplementeerd,
+                waaronder regelmatige desinfectie van veel aangeraakte oppervlakken, frequent handen wassen door
+                personeel en het gebruik van gezichtsmaskers en handschoenen. Het restaurant moedigt klanten ook aan om
+                afstand te houden bij het ophalen van hun bestelling.</p>
+        </div>
     </section>
+    <footer>
+        
+    </footer>
 </body>
+
+<!-- <script src="./JS/Hamburgermenu.js"></script> -->
 
 </html>
