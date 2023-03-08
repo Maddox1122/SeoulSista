@@ -11,10 +11,9 @@
     <link rel="shortcut icon" href="./Media/logo_transparant_5.png" type="image/x-icon">
 </head>
 
-<body class="h-screen bg-[#f0bebb] select-none overflowx-hidden">
+<body class="h-screen bg-[#f0bebb] select-none overflow-x-hidden">
     <header class="text-white text-2xl bg-[#252525] relative flex">
         <div class="mr-6">
-            <!-- <div class="flex justify-end absolute right-5 top-[35px] bg-white w-[10vw] h-[5px] rounded-lg cursor-pointer hamburger"></div> -->
             <ul class="flex justify-end absolute right-4 top-[7px] font-semibold">
                 <li class="p-4 duration-300 hover:scale-125"><a href="#">Menu</a></li>
                 <li class="p-4 duration-300 hover:scale-125"><a href="#">Bestellen</a></li>
@@ -30,13 +29,13 @@
         class="bg-[url('./Media/Headerimg.jpg')] flex items-center justify-center bg-top h-[25vh]">
         <h2 class="text-green-500 text-[70px] font-extrabold">Seoul Sista</h2>
     </header>
-    <section class="flex flex-row justify-center">
+    <section class="grid grid-cols-2 place-items-center max-[900px]:grid-cols-1 min-[1800px]:grid-cols-4">
         <div class="mt-4">
-            <img class="rounded-lg h-auto outline outline-[#f0bebb] max-[1300px]:hidden"
+            <img class="rounded-lg h-auto outline outline-[#f0bebb]"
                 src="./Media/Home-left.jpg" alt="Eten Seoul Sista" width="450px">
         </div>
         <div
-            class="mt-3 p-2 bg-[#f0bebb] rounded-lg w-[450px] text-center text-gray-800 flex items-center flex-col max-[1300px]:ml-0">
+            class="mt-3 p-2 w-[450px] text-center mx-auto text-gray-800 flex items-center flex-col">
             <h2 class="font-semibold text-[32px]">Onze Restaurants</h2>
             <p class="leading-7 max-w-[380px]">Seoul Sista is een Koreaans restaurant dat gevestigd is in het hart van
                 de stad. Het menu biedt een
@@ -55,11 +54,11 @@
                 Als u op zoek bent naar een heerlijke Koreaanse maaltijd in een gezellige omgeving, dan is Seoul Sista
                 zeker een bezoek waard!</p>
         </div>
-        <div class="mt-4 max-[850px]:hidden">
-            <img class="rounded-lg ml-6 h-auto outline outline-[#f0bebb] hidden sm:block"
+        <div class="mt-4">
+            <img class="rounded-lg ml-6 h-auto outline outline-[#f0bebb] min-[900px]:ml-3"
                 src="./Media/Seoul-Sista-Covid-mobile2.png" alt="COVID-19 Stappen" width="450px">
             <div
-                class="mt-3 p-2 bg-[#f0bebb] ml-6 rounded-lg w-[450px] text-center  text-gray-800 flex items-center flex-col pb-8 hidden sm:block">
+                class="mt-3 p-2 bg-[#f0bebb] ml-6 rounded-lg w-[450px] text-center mx-auto text-gray-800 flex items-center flex-col pb-8">
                 <h2 class="font-semibold text-[32px] text-gray-800">Handleiding Corona &uarr;</h2>
                 <p class="leading-[27px] max-w-[380px] mt-4 mx-auto">
                     Voor de Handleiding voor corona kan u hier boven zien of ons persoonlijke een mailtje sturen <br>
@@ -67,7 +66,7 @@
                 </p>
             </div>
         </div>
-        <div class="mt-3 p-2 bg-[#f0bebb] ml-6 rounded-lg w-[450px] text-center text-gray-800 flex items-center flex-col">
+        <div class="mt-3 p-2 ml-6 w-[450px] text-center text-gray-800 flex items-center flex-col">
             <h2 class="font-semibold text-[32px]">Seoul Sista Tijdens Corona</h2>
             <p class="leading-[27px] max-w-[380px]">Seoul Sista is een Koreaans restaurant met meerdere locaties in
                 Nederland. Tijdens de COVID-19 pandemie
@@ -87,7 +86,7 @@
     </section>
     <footer
         class="bg-[#252525] flex justify-center flex-row mt-4 text-white px-6 pb-[8rem] pt-[4rem]">
-        <div class="grid grid-cols-4 gap-12 max-[820px]:grid-cols-none max-[820px]:grid-rows-4 max-[820px]:pb-none">
+        <div class="grid grid-cols-4 gap-12 max-[900px]:grid-cols-none max-[900px]:grid-rows-4 max-[820px]:pb-none">
             <div class="">
                 <h4 class="text-[30px] font-semibold text-[#f0bebb]">Locaties:</h4>
                 <ul class="mt-2">
@@ -165,7 +164,5 @@
         
     </footer>
 </body>
-
-<!-- <script src="./JS/Hamburgermenu.js"></script> -->
 
 </html>
