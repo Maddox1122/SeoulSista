@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,111 @@
     <link rel="stylesheet" href="./CSS/informatie.css">
     <title>Document</title>
 </head>
+
 <body>
     <!-- social: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image -->
+    <!-- NavBar -->
+    <header class="text-white text-2xl bg-[#252525] relative flex">
+        <div class="mr-6">
+            <ul class="flex justify-end absolute right-4 top-[7px] font-semibold">
+                <li class="p-4 duration-300 link link-underline link-underline-black"><a href="#">Menu</a></li>
+                <li class="p-4 duration-300 link link-underline link-underline-black"><a
+                        href="./Bestellen.html">Bestellen</a></li>
+                <li class="p-4 duration-300 link link-underline link-underline-black"><a
+                        href="./informatie.html">Info</a></li>
+            </ul>
+        </div>
+        <div>
+            <a class="max-[450px]:pointer-events-none" href="./index.html"><img
+                    class="py-2 max-[350px]:opacity-0 hover:scale-125 duration-300" src="./Media/logo_transparant_5.png"
+                    alt="Logo Seoul Sista" width="75px"></a>
+        </div>
+    </header>
+    <header class="bg-[url('./Media/Headerimg.jpg')] bg-blend-darken flex items-center justify-center bg-top h-[25vh]">
+        <h2 class="text-green-500 text-[70px] font-extrabold">Seoul Sista</h2>
+    </header>
     <h1>KARAOKE</h1>
     <h2>PRICES AND OPENING HOURS</h2>
+    <footer class="bg-[#252525] flex justify-center flex-row mt-4 text-white px-6 pb-[8rem] pt-[4rem]">
+        <div class="grid grid-cols-4 gap-12 max-[900px]:grid-cols-none max-[900px]:grid-rows-4 max-[820px]:pb-none">
+            <div class="">
+                <h4 class="text-[30px] font-semibold text-[#f0bebb]">Locaties:</h4>
+                <ul class="mt-2">
+                    <li class="mt-2 hover:text-[#f0bebb] duration-300">
+                        Amsterdam
+                        Reguliersdwarsstraat
+                        Centraal
+                    </li>
+                    <li class="mt-2 hover:text-[#f0bebb] duration-300">
+                        Rotterdam
+                        Hartmanstraat
+                        Witte de With
+
+                    </li>
+                    <li class="mt-2 hover:text-[#f0bebb] duration-300">
+                        Rotterdam
+                        Weena
+                        Centraal Station
+
+                    </li>
+                    <li class="mt-2 hover:text-[#f0bebb] duration-300">
+                        Rotterdam
+                        Karaoke & Cafe
+                        Weena
+                    </li>
+                </ul>
+            </div>
+            <div class="">
+                <h4 class="text-[#f0bebb] font-semibold text-[30px]">Openingstijden:</h4>
+                <table class=mt-2 table-fixed">
+                    <tr>
+                        <td>Maandag</td>
+                        <td class="pl-6">4:45pm – 11:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Dinsdag</td>
+                        <td class="pl-6">Gesloten</td>
+                    </tr>
+                    <tr>
+                        <td>Woensdag</td>
+                        <td class="pl-6">4:45pm – 11:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Donderdag</td>
+                        <td class="pl-6">4:45pm – 11:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Vrijdag</td>
+                        <td class="pl-6">4:45pm – 11:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Zaterdag</td>
+                        <td class="pl-6">4:45pm – 11:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Zondag</td>
+                        <td class="pl-6">4:45pm – 11:00pm</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h4 class="font-semibold text-[30px] text-[#f0bebb]">Contact:</h4>
+                <h5>Hartmansstraat 31</h5>
+                <h5>3012 VA Rotterdam</h5>
+                <h5 class="mt-3"><a class="hover:text-[#f0bebb] duration-300" href="telto:010 737 0179">010 737 0179</a>
+                </h5>
+                <h5><a class="hover:text-[#f0bebb] duration-300"
+                        href="mailto:reservations@seoulsista.nl">reservations@seoulsista.nl</a></h5>
+                <h5 class="mt-3">Grand Slam Holding BV</h5>
+                <h5>KVK: 69461546</h5>
+            </div>
+            <div class="text-white self-center">
+                <h4 class="opacity-75">© 2023 SEOUL SISTA.</h4>
+                <h4>Site built by Maddox de Rooij, Jasmine, Emily</h4>
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>
