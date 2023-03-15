@@ -10,10 +10,15 @@
     <script src="https://kit.fontawesome.com/4526edc78a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="shortcut icon" href="./Media/logo_transparant_5.png" type="image/x-icon">
-    <script src="./JS/Winkelwagen.js" async></script>
+
 </head>
 
 <body class="h-screen bg-[#f0bebb] select-none overflow-x-hidden font-['MuseoSans-300']">
+
+
+    <!------------  NavBar End ------------>
+
+
     <header class="text-white text-2xl bg-[#252525] relative flex">
         <div class="mr-6">
             <ul class="flex justify-end absolute right-4 top-[7px] font-semibold">
@@ -33,18 +38,25 @@
     <header class="bg-[url('./Media/Headerimg.jpg')] bg-blend-darken flex items-center justify-center bg-top h-[25vh]">
         <h2 class="text-green-500 text-[70px] font-extrabold">Seoul Sista</h2>
     </header>
-    <section class="grid grid-cols-4 place-items-center mt-8 ml-4 text-gray-800">
+
+
+    <!------------  NavBar End ------------>
+
+    <!------------  Bestel Section Start ------------>
+
+
+    <section class="grid grid-cols-4 place-items-center mt-8 ml-4 text-gray-800 max-[1600px]:grid-cols-2 max-[800px]:grid-cols-none">
         <div class="grid grid-rows-2">
             <div>
                 <img class="rounded-lg aspect-square" src="./Media/Chicken menu.jpg" alt="Fried Chicken" width="350px">
             </div>
             <div class="h-100">
-                <h1 class="mt-4 text-[30px] font-semibold">Gebakken kip menu: &#x20AC;21,99</h1>
+                <h1 class="mt-4 text-[30px] font-semibold">Gebakken kip menu: &#x20AC;21,99PP</h1>
                 <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 Portie Gebakken kip, 1 Portie
                     Dakgangjeong, 1 Portie Kip
                     gimbap.</p>
-                <button
-                    class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
+                <button data-target="#overlay1"
+                    class="openOverlay rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
             </div>
         </div>
         <div class="grid grid-rows-2">
@@ -52,12 +64,12 @@
                 <img class="rounded-lg aspect-square" src="./Media/Noodle menu.jpg" alt="Noodle Menu" width="350px">
             </div>
             <div>
-                <h1 class="mt-4 text-[30px] font-semibold">Noodle Menu: &#x20AC;14,99</h1>
+                <h1 class="mt-4 text-[30px] font-semibold">Noodle Menu: &#x20AC;14,99PP</h1>
                 <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Nengmyun Cold Noodles en 1 keer
                     de
                     Yone Salad.</p>
-                <button
-                    class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
+                <button data-target="#overlay2"
+                    class="openOverlay rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
             </div>
         </div>
         <div class="grid grid-rows-2">
@@ -65,11 +77,11 @@
                 <img class="rounded-lg aspect-square" src="./Media/Rijst menu.jpg" alt="Rijst Menu" width="350px">
             </div>
             <div>
-                <h1 class="mt-4 text-[30px] font-semibold">Rijst Menu: &#x20AC;17,99</h1>
+                <h1 class="mt-4 text-[30px] font-semibold">Rijst Menu: &#x20AC;17,99PP</h1>
                 <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Bibimbab en 1 keer de Hae Cho.
                 </p>
-                <button
-                    class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
+                <button data-target="#overlay3"
+                    class="openOverlay rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
             </div>
         </div>
         <div class="grid grid-rows-2">
@@ -77,26 +89,26 @@
                 <img class="rounded-lg aspect-square" src="./Media/Vis menu.jpg" alt="Vis Menu" width="350px">
             </div>
             <div>
-                <h1 class="mt-4 text-[30px] font-semibold">Vis Menu: &#x20AC;19,99</h1>
+                <h1 class="mt-4 text-[30px] font-semibold">Vis Menu: &#x20AC;19,99PP</h1>
                 <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Sashimi Samlon/Tuna en 1 keer de
                     Yone Salad.</p>
-                <button
-                    class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
+                <button data-target="#overlay4"
+                    class="openOverlay rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
             </div>
         </div>
     </section>
-    <section class="grid grid-cols-4 place-items-center mt-4 ml-4 text-gray-800">
+    <section class="grid grid-cols-4 place-items-center mt-4 ml-4 text-gray-800 max-[1600px]:grid-cols-2 max-[800px]:grid-cols-none">
         <div class="grid grid-rows-2">
             <div>
                 <img class="rounded-lg aspect-square" src="./Media/Beef menu.jpg" alt="Beef Menu" width="350px">
             </div>
             <div class="h-100">
-                <h1 class="mt-4 text-[30px] font-semibold">Beef menu: &#x20AC;24,99</h1>
+                <h1 class="mt-4 text-[30px] font-semibold">Beef menu: &#x20AC;24,99PP</h1>
                 <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 La Kalbi en 1 Deungshim Gui en 1 keer de
                     Wan Du Kong.
                 </p>
-                <button
-                    class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
+                <button data-target="#overlay5"
+                    class="openOverlay rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
             </div>
         </div>
         <div class="grid grid-rows-2">
@@ -104,13 +116,13 @@
                 <img class="rounded-lg aspect-square" src="./Media/SeaFood menu.jpg" alt="SeaFood Menu" width="350px">
             </div>
             <div>
-                <h1 class="mt-4 text-[30px] font-semibold">SeaFood Menu: &#x20AC;34,99</h1>
+                <h1 class="mt-4 text-[30px] font-semibold">SeaFood Menu: &#x20AC;34,99PP</h1>
                 <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Ohjinge Gui, 1 keer de Scallops
                     en
                     de
                     Yone Salad.</p>
-                <button
-                    class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
+                <button data-target="#overlay6"
+                    class="openOverlay rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
             </div>
         </div>
         <div class="grid grid-rows-2">
@@ -118,12 +130,12 @@
                 <img class="rounded-lg aspect-square" src="./Media/Pork menu.webp" alt="Pork Menu" width="350px">
             </div>
             <div>
-                <h1 class="mt-4 text-[30px] font-semibold">Pork Menu: &#x20AC;28,99</h1>
+                <h1 class="mt-4 text-[30px] font-semibold">Pork Menu: &#x20AC;28,99PP</h1>
                 <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer Yan Go Gi Gui, 1 keer de Samguybsal
                     Gui.
                 </p>
-                <button
-                    class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
+                <button data-target="#overlay7"
+                    class="openOverlay rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
             </div>
         </div>
         <div class="grid grid-rows-2">
@@ -131,210 +143,231 @@
                 <img class="rounded-lg aspect-square" src="./Media/Soep menu.jpg" alt="Soep Menu" width="350px">
             </div>
             <div>
-                <h1 class="mt-4 text-[30px] font-semibold">Soep Menu: &#x20AC;9,99</h1>
+                <h1 class="mt-4 text-[30px] font-semibold">Soep Menu: &#x20AC;9,99PP</h1>
                 <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Kalbi Tang en 1 keer de
                     Yone Salad.</p>
-                <button
-                    class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
+                <button data-target="#overlay8"
+                    class="openOverlay rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
             </div>
         </div>
     </section>
 
+
     <!------------  Bestel Section End ------------>
 
-    <!------------  Overlay Sections ------------>
+    <!------------  Overlay Section Start ------------>
 
 
-    <section class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
-        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[25vw]">
-            <div class="grid grid-rows-2 relative place-items-center">
+    <section id="overlay1" class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[50vw]">
+            <div class="grid grid-cols-2 relative place-items-center">
                 <div>
                     <img class="rounded-lg aspect-square" src="./Media/Chicken menu.jpg" alt="Fried Chicken"
                         width="350px">
                 </div>
                 <div class="h-100">
-                    <h1 class="mt-4 text-[30px] font-semibold">Gebakken kip menu: &#x20AC;21,99</h1>
+                    <h1 class="mt-4 text-[30px] font-semibold">Gebakken kip menu: &#x20AC;21,99PP</h1>
                     <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 Portie Gebakken kip, 1 Portie
                         Dakgangjeong, 1 Portie Kip
                         gimbap.</p>
-                    <button id="Bestellen"
-                        class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button id="Annuleren" class=" rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
-                        duration-300">Annuleren</button>
                     <div class="flex flex-col">
                         <label class="mt-4" for="naam">Naam:</label>
-                        <input id="naam" class="mt-4 p-1 w-[15vw]" type="text" name="name" id="naam">
+                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
                         <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                        <input class="mt-4 p-1 w-[15vw]" type="text" name="Woonplaats" id="Woonplaats">
+                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
                     </div>
+                    <button id="Bestellen"
+                        class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
+                    <button data-target="#overlay1" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
+                        duration-300">Annuleren</button>
+                    <!-- <p class="confirmtext text-white"></p> -->
                 </div>
             </div>
         </div>
     </section>
-    <section class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
-        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[25vw]">
-            <div class="grid grid-rows-2 relative place-items-center">
+
+    <section id="overlay2" class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[50vw]">
+            <div class="grid grid-cols-2 relative place-items-center">
                 <div>
-                    <img class="rounded-lg aspect-square" src="./Media/Soep menu.jpg" alt="Soep Menu" width="350px">
+                    <img class="rounded-lg aspect-square" src="./Media/Noodle menu.jpg" alt="Noodle Menu" width="350px">
                 </div>
                 <div class="relative">
-                    <h1 class="mt-4 text-[30px] font-semibold">Soep Menu: &#x20AC;9,99</h1>
-                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Kalbi Tang en 1 keer de Yone
-                        Salad.</p>
+                    <h1 class="mt-4 text-[30px] font-semibold">Noodle Menu: &#x20AC;14,99PP</h1>
+                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Nengmyun Cold Noodles en 1
+                        keer
+                        de
+                        Yone Salad.</p>
+                    <div class="flex flex-col">
+                        <label class="mt-4" for="naam">Naam:</label>
+                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
+                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
+                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
+                    </div>
                     <button id="Bestellen"
                         class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button id="Annuleren" class=" rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
+                    <button data-target="#overlay2" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
                         duration-300">Annuleren</button>
-                        <div class="flex flex-col">
-                            <label class="mt-4" for="naam">Naam:</label>
-                            <input id="naam" class="mt-4 p-1 w-[15vw]" type="text" name="name" id="naam">
-                            <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                            <input class="mt-4 p-1 w-[15vw]" type="text" name="Woonplaats" id="Woonplaats">
-                        </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
-        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[25vw]">
-            <div class="grid grid-rows-2 relative place-items-center">
+
+    <section id="overlay3" class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[50vw]">
+            <div class="grid grid-cols-2 relative place-items-center">
                 <div>
-                    <img class="rounded-lg aspect-square" src="./Media/Soep menu.jpg" alt="Soep Menu" width="350px">
+                    <img class="rounded-lg aspect-square" src="./Media/Rijst menu.jpg" alt="Rijst Menu" width="350px">
                 </div>
                 <div class="relative">
-                    <h1 class="mt-4 text-[30px] font-semibold">Soep Menu: &#x20AC;9,99</h1>
-                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Kalbi Tang en 1 keer de Yone
-                        Salad.</p>
+                    <h1 class="mt-4 text-[30px] font-semibold">Rijst Menu: &#x20AC;17,99PP</h1>
+                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Bibimbab en 1 keer de Hae
+                        Cho.
+                    </p>
+                    <div class="flex flex-col">
+                        <label class="mt-4" for="naam">Naam:</label>
+                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
+                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
+                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
+                    </div>
                     <button id="Bestellen"
                         class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button id="Annuleren" class=" rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
+                    <button data-target="#overlay3" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
                         duration-300">Annuleren</button>
-                        <div class="flex flex-col">
-                            <label class="mt-4" for="naam">Naam:</label>
-                            <input id="naam" class="mt-4 p-1 w-[15vw]" type="text" name="name" id="naam">
-                            <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                            <input class="mt-4 p-1 w-[15vw]" type="text" name="Woonplaats" id="Woonplaats">
-                        </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
-        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[25vw]">
-            <div class="grid grid-rows-2 relative place-items-center">
+
+    <section id="overlay4" class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[50vw]">
+            <div class="grid grid-cols-2 relative place-items-center">
                 <div>
-                    <img class="rounded-lg aspect-square" src="./Media/Soep menu.jpg" alt="Soep Menu" width="350px">
+                    <img class="rounded-lg aspect-square" src="./Media/Vis menu.jpg" alt="Vis Menu" width="350px">
                 </div>
                 <div class="relative">
-                    <h1 class="mt-4 text-[30px] font-semibold">Soep Menu: &#x20AC;9,99</h1>
-                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Kalbi Tang en 1 keer de Yone
-                        Salad.</p>
+                    <h1 class="mt-4 text-[30px] font-semibold">Vis Menu: &#x20AC;19,99PP</h1>
+                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Sashimi Samlon/Tuna en 1
+                        keer de
+                        Yone Salad.</p>
+                    <div class="flex flex-col">
+                        <label class="mt-4" for="naam">Naam:</label>
+                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
+                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
+                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
+                    </div>
                     <button id="Bestellen"
                         class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button id="Annuleren" class=" rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
+                    <button data-target="#overlay4" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
                         duration-300">Annuleren</button>
-                        <div class="flex flex-col">
-                            <label class="mt-4" for="naam">Naam:</label>
-                            <input id="naam" class="mt-4 p-1 w-[15vw]" type="text" name="name" id="naam">
-                            <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                            <input class="mt-4 p-1 w-[15vw]" type="text" name="Woonplaats" id="Woonplaats">
-                        </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
-        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[25vw]">
-            <div class="grid grid-rows-2 relative place-items-center">
+
+    <section id="overlay5" class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[50vw]">
+            <div class="grid grid-cols-2 relative place-items-center">
                 <div>
-                    <img class="rounded-lg aspect-square" src="./Media/Soep menu.jpg" alt="Soep Menu" width="350px">
+                    <img class="rounded-lg aspect-square" src="./Media/Beef menu.jpg" alt="Beef Menu" width="350px">
                 </div>
                 <div class="relative">
-                    <h1 class="mt-4 text-[30px] font-semibold">Soep Menu: &#x20AC;9,99</h1>
-                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Kalbi Tang en 1 keer de Yone
-                        Salad.</p>
+                    <h1 class="mt-4 text-[30px] font-semibold">Beef menu: &#x20AC;24,99PP</h1>
+                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 La Kalbi en 1 Deungshim Gui en 1
+                        keer de
+                        Wan Du Kong.
+                    </p>
+                    <div class="flex flex-col">
+                        <label class="mt-4" for="naam">Naam:</label>
+                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
+                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
+                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
+                    </div>
                     <button id="Bestellen"
                         class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button id="Annuleren" class=" rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
+                    <button data-target="#overlay5" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
                         duration-300">Annuleren</button>
-                        <div class="flex flex-col">
-                            <label class="mt-4" for="naam">Naam:</label>
-                            <input id="naam" class="mt-4 p-1 w-[15vw]" type="text" name="name" id="naam">
-                            <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                            <input class="mt-4 p-1 w-[15vw]" type="text" name="Woonplaats" id="Woonplaats">
-                        </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
-        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[25vw]">
-            <div class="grid grid-rows-2 relative place-items-center">
+
+    <section id="overlay6" class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[50vw]">
+            <div class="grid grid-cols-2 relative place-items-center">
                 <div>
-                    <img class="rounded-lg aspect-square" src="./Media/Soep menu.jpg" alt="Soep Menu" width="350px">
+                    <img class="rounded-lg aspect-square" src="./Media/SeaFood menu.jpg" alt="SeaFood Menu"
+                        width="350px">
                 </div>
                 <div class="relative">
-                    <h1 class="mt-4 text-[30px] font-semibold">Soep Menu: &#x20AC;9,99</h1>
-                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Kalbi Tang en 1 keer de Yone
-                        Salad.</p>
+                    <h1 class="mt-4 text-[30px] font-semibold">SeaFood Menu: &#x20AC;34,99PP</h1>
+                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Ohjinge Gui, 1 keer de
+                        Scallops
+                        en
+                        de
+                        Yone Salad.</p>
+                    <div class="flex flex-col">
+                        <label class="mt-4" for="naam">Naam:</label>
+                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
+                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
+                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
+                    </div>
                     <button id="Bestellen"
                         class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button id="Annuleren" class=" rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
+                    <button data-target="#overlay6" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
                         duration-300">Annuleren</button>
-                        <div class="flex flex-col">
-                            <label class="mt-4" for="naam">Naam:</label>
-                            <input id="naam" class="mt-4 p-1 w-[15vw]" type="text" name="name" id="naam">
-                            <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                            <input class="mt-4 p-1 w-[15vw]" type="text" name="Woonplaats" id="Woonplaats">
-                        </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
-        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[25vw]">
-            <div class="grid grid-rows-2 relative place-items-center">
+
+    <section id="overlay7" class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[50vw]">
+            <div class="grid grid-cols-2 relative place-items-center">
                 <div>
-                    <img class="rounded-lg aspect-square" src="./Media/Soep menu.jpg" alt="Soep Menu" width="350px">
+                    <img class="rounded-lg aspect-square" src="./Media/Pork menu.webp" alt="Prok Menu" width="350px">
                 </div>
                 <div class="relative">
-                    <h1 class="mt-4 text-[30px] font-semibold">Soep Menu: &#x20AC;9,99</h1>
-                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Kalbi Tang en 1 keer de Yone
-                        Salad.</p>
+                    <h1 class="mt-4 text-[30px] font-semibold">Pork Menu: &#x20AC;28,99PP</h1>
+                    <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer Yan Go Gi Gui, 1 keer de
+                        Samguybsal
+                        Gui.
+                    </p>
+                    <div class="flex flex-col">
+                        <label class="mt-4" for="naam">Naam:</label>
+                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
+                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
+                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
+                    </div>
                     <button id="Bestellen"
                         class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button id="Annuleren" class=" rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
+                    <button data-target="#overlay7" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
                         duration-300">Annuleren</button>
-                        <div class="flex flex-col">
-                            <label class="mt-4" for="naam">Naam:</label>
-                            <input id="naam" class="mt-4 p-1 w-[15vw]" type="text" name="name" id="naam">
-                            <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                            <input class="mt-4 p-1 w-[15vw]" type="text" name="Woonplaats" id="Woonplaats">
-                        </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
-        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[25vw]">
-            <div class="grid grid-rows-2 relative place-items-center">
+
+    <section id="overlay8" class="overlay fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="overlay-content bg-[#f0bebb] rounded-lg p-8 w-[50vw]">
+            <div class="grid grid-cols-2 relative place-items-center">
                 <div>
                     <img class="rounded-lg aspect-square" src="./Media/Soep menu.jpg" alt="Soep Menu" width="350px">
                 </div>
                 <div class="relative">
-                    <h1 class="mt-4 text-[30px] font-semibold">Soep Menu: &#x20AC;9,99</h1>
+                    <h1 class="mt-4 text-[30px] font-semibold">Soep Menu: &#x20AC;9,99PP</h1>
                     <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Kalbi Tang en 1 keer de Yone
                         Salad.</p>
+                    <div class="flex flex-col">
+                        <label class="mt-4" for="naam">Naam:</label>
+                        <input class="mt-4 p-1 w-[15vw] rounded-lg" type="text" name="name" id="naam">
+                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
+                        <input class="mt-4 p-1 w-[15vw] rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
+                    </div>
                     <button id="Bestellen"
                         class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button id="Annuleren" class=" rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
+                    <button data-target="#overlay8" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
                         duration-300">Annuleren</button>
-                        <div class="flex flex-col">
-                            <label class="mt-4" for="naam">Naam:</label>
-                            <input id="naam" class="mt-4 p-1 w-[15vw]" type="text" name="name" id="naam">
-                            <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                            <input class="mt-4 p-1 w-[15vw]" type="text" name="Woonplaats" id="Woonplaats">
-                        </div>
                 </div>
             </div>
         </div>
@@ -425,8 +458,9 @@
 
     </footer>
 
-<!------------  Footer End ------------>
+    <!------------  Footer End ------------>
 
 </body>
+<script src="./JS/Winkelwagen.js" defer></script>
 
 </html>
