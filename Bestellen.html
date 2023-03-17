@@ -16,7 +16,7 @@
 <body class="h-screen bg-[#f0bebb] select-none overflow-x-hidden font-['MuseoSans-300']">
 
 
-    <!------------  NavBar End ------------>
+    <!------------  NavBar Start ------------>
 
 
     <header class="text-white text-2xl bg-[#252525] relative flex">
@@ -27,6 +27,7 @@
                         href="./Bestellen.html">Bestellen</a></li>
                 <li class="p-4 duration-300 link link-underline link-underline-black"><a
                         href="./informatie.html">Info</a></li>
+                <li class="p-4 duration-300 link link-underline link-underline-black"><i class="fa-solid fa-cart-shopping cursor-pointer"></i></li>
             </ul>
         </div>
         <div>
@@ -172,20 +173,9 @@
                     <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 Portie Gebakken kip, 1 Portie
                         Dakgangjeong, 1 Portie Kip
                         gimbap.</p>
-                    <div class="flex flex-col">
-                        <label class="mt-4" for="naam">Naam:</label>
-                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
-                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
-                        <label class="mt-4" for="aantal">Aantal</label>
-                        <input class="mt-4 rounded-lg w-[5vw] p-1 aantal" type="text" name="aantal" id="aantal" value="1">
-                        <p class="mt-4 Prijs">Prijs: &#x20AC;21,99PP</p>
-                    </div>
-                    <button id="Bestellen"
-                        class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button data-target="#overlay1" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
-                        duration-300">Annuleren</button>
-                    <!-- <p class="confirmtext text-white"></p> -->
+                    <button data-target="#overlay1" class="toevoegen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">+</button>
+                    <button data-target="#overlay1" class="verwijderen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">-</button>
+                    <button data-target="#overlay1" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Annuleren</button>
                 </div>
             </div>
         </div>
@@ -203,19 +193,9 @@
                         keer
                         de
                         Yone Salad.</p>
-                    <div class="flex flex-col">
-                        <label class="mt-4" for="naam">Naam:</label>
-                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
-                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
-                        <label class="mt-4" for="aantal">Aantal</label>
-                        <input class="mt-4 rounded-lg w-[5vw] p-1 aantal" type="text" name="aantal" id="aantal" value="1">
-                        <p class="mt-4 Prijs">Prijs: &#x20AC;14,99PP</p>
-                    </div>
-                    <button id="Bestellen"
-                        class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button data-target="#overlay2" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
-                        duration-300">Annuleren</button>
+                    <button data-target="#overlay2" class="toevoegen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">+</button>
+                    <button data-target="#overlay2" class="verwijderen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">-</button>
+                    <button data-target="#overlay2" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Annuleren</button>
                 </div>
             </div>
         </div>
@@ -232,19 +212,9 @@
                     <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Bibimbab en 1 keer de Hae
                         Cho.
                     </p>
-                    <div class="flex flex-col">
-                        <label class="mt-4" for="naam">Naam:</label>
-                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
-                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
-                        <label class="mt-4" for="aantal">Aantal</label>
-                        <input class="mt-4 rounded-lg w-[5vw] p-1 aantal" type="text" name="aantal" id="aantal" value="1">
-                        <p class="mt-4 Prijs">Prijs: &#x20AC;17,99PP</p>
-                    </div>
-                    <button id="Bestellen"
-                        class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button data-target="#overlay3" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
-                        duration-300">Annuleren</button>
+                    <button data-target="#overlay3" class="toevoegen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">+</button>
+                    <button data-target="#overlay3" class="verwijderen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">-</button>
+                    <button data-target="#overlay3" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Annuleren</button>
                 </div>
             </div>
         </div>
@@ -261,19 +231,9 @@
                     <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Sashimi Samlon/Tuna en 1
                         keer de
                         Yone Salad.</p>
-                    <div class="flex flex-col">
-                        <label class="mt-4" for="naam">Naam:</label>
-                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
-                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
-                        <label class="mt-4" for="aantal">Aantal</label>
-                        <input class="mt-4 rounded-lg w-[5vw] p-1 aantal" type="text" name="aantal" id="aantal" value="1">
-                        <p class="mt-4 Prijs">Prijs: &#x20AC;19,99PP</p>
-                    </div>
-                    <button id="Bestellen"
-                        class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button data-target="#overlay4" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
-                        duration-300">Annuleren</button>
+                    <button data-target="#overlay4" class="toevoegen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">+</button>
+                    <button data-target="#overlay4" class="verwijderen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">-</button>
+                    <button data-target="#overlay4" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Annuleren</button>
                 </div>
             </div>
         </div>
@@ -291,19 +251,9 @@
                         keer de
                         Wan Du Kong.
                     </p>
-                    <div class="flex flex-col">
-                        <label class="mt-4" for="naam">Naam:</label>
-                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
-                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
-                        <label class="mt-4" for="aantal">Aantal</label>
-                        <input class="mt-4 rounded-lg w-[5vw] p-1 aantal" type="text" name="aantal" id="aantal" value="1">
-                        <p class="mt-4 Prijs">Prijs: &#x20AC;24,99PP</p>
-                    </div>
-                    <button id="Bestellen"
-                        class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button data-target="#overlay5" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
-                        duration-300">Annuleren</button>
+                    <button data-target="#overlay5" class="toevoegen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">+</button>
+                    <button data-target="#overlay5" class="verwijderen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">-</button>
+                    <button data-target="#overlay5" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Annuleren</button>
                 </div>
             </div>
         </div>
@@ -323,19 +273,9 @@
                         en
                         de
                         Yone Salad.</p>
-                    <div class="flex flex-col">
-                        <label class="mt-4" for="naam">Naam:</label>
-                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
-                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
-                        <label class="mt-4" for="aantal">Aantal</label>
-                        <input class="mt-4 rounded-lg w-[5vw] p-1 aantal" type="text" name="aantal" id="aantal" value="1">
-                        <p class="mt-4 Prijs">Prijs: &#x20AC;34,99PP</p>
-                    </div>
-                    <button id="Bestellen"
-                        class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button data-target="#overlay6" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
-                        duration-300">Annuleren</button>
+                    <button data-target="#overlay6" class="toevoegen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">+</button>
+                    <button data-target="#overlay6" class="verwijderen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">-</button>
+                    <button data-target="#overlay6" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Annuleren</button>
                 </div>
             </div>
         </div>
@@ -353,19 +293,9 @@
                         Samguybsal
                         Gui.
                     </p>
-                    <div class="flex flex-col">
-                        <label class="mt-4" for="naam">Naam:</label>
-                        <input id="naam" class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="name" id="naam">
-                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                        <input class="mt-4 p-1 w-[15vw]  rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
-                        <label class="mt-4" for="aantal">Aantal</label>
-                        <input class="mt-4 rounded-lg w-[5vw] p-1 aantal" type="text" name="aantal" id="aantal" value="1">
-                        <p class="mt-4 Prijs">Prijs: &#x20AC;28,99PP</p>
-                    </div>
-                    <button id="Bestellen"
-                        class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button data-target="#overlay7" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
-                        duration-300">Annuleren</button>
+                    <button data-target="#overlay7" class="toevoegen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">+</button>
+                    <button data-target="#overlay7" class="verwijderen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">-</button>
+                    <button data-target="#overlay7" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Annuleren</button>
                 </div>
             </div>
         </div>
@@ -381,25 +311,28 @@
                     <h1 class="mt-4 text-[30px] font-semibold">Soep Menu</h1>
                     <p class="max-w-[350px] leading-[27px]">Bij dit menu krijgt u 1 keer de Kalbi Tang en 1 keer de Yone
                         Salad.</p>
-                    <div class="flex flex-col">
-                        <label class="mt-4" for="naam">Naam:</label>
-                        <input class="mt-4 p-1 w-[15vw] rounded-lg" type="text" name="name" id="naam">
-                        <label class="mt-4" for="Woonplaats">Woonplaats:</label>
-                        <input class="mt-4 p-1 w-[15vw] rounded-lg" type="text" name="Woonplaats" id="Woonplaats">
-                        <label class="mt-4" for="aantal">Aantal</label>
-                        <input class="mt-4 rounded-lg w-[5vw] p-1 aantal" type="text" name="aantal" id="aantal" value="1">
-                        <p class="mt-4 Prijs">Prijs: &#x20AC;9,99PP</p>
-                    </div>
-                    <button id="Bestellen"
-                        class="rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Bestellen</button>
-                    <button data-target="#overlay8" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110
-                        duration-300">Annuleren</button>
+                    <button data-target="#overlay8" class="toevoegen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">+</button>
+                    <button data-target="#overlay8" class="verwijderen rounded-lg bg-[#252525] text-white p-[16px] w-[11.2vw] mt-3 hover:scale-110 duration-300">-</button>
+                    <button data-target="#overlay8" class="annuleren rounded-lg bg-[#252525] text-white p-[16px] w-full mt-3 hover:scale-110 duration-300">Annuleren</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!------------  Overlay Sections End ------------>
+
+    <!------------  Winkelmandje Start ------------>
+
+    <section class="winkelmandje fixed top-[7vh] h-[50vh] w-[400px] bg-[#f0bebb] rounded-lg right-0">
+        <div>
+            <img class="rounded-lg mt-4 ml-2" src="./Media/Chicken menu.jpg" alt="Chicken menu" width="75px">
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+    <!------------  Winkelmandje End ------------>
 
     <!------------  Footer ------------>
 
@@ -437,7 +370,7 @@
                 <table class=mt-2 table-fixed">
                     <tr>
                         <td>Maandag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
+                        <td class="pl-6">4:45pm – 110pm</td>
                     </tr>
                     <tr>
                         <td>Dinsdag</td>
@@ -445,23 +378,23 @@
                     </tr>
                     <tr>
                         <td>Woensdag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
+                        <td class="pl-6">4:45pm – 110pm</td>
                     </tr>
                     <tr>
                         <td>Donderdag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
+                        <td class="pl-6">4:45pm – 110pm</td>
                     </tr>
                     <tr>
                         <td>Vrijdag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
+                        <td class="pl-6">4:45pm – 110pm</td>
                     </tr>
                     <tr>
                         <td>Zaterdag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
+                        <td class="pl-6">4:45pm – 110pm</td>
                     </tr>
                     <tr>
                         <td>Zondag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
+                        <td class="pl-6">4:45pm – 110pm</td>
                     </tr>
                 </table>
             </div>
