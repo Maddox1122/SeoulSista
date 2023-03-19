@@ -1,12 +1,13 @@
 const OpenOverlayButtons = document.querySelectorAll(".openOverlay");
-const Annuleren = document.querySelectorAll(".annuleren");
-const Confirm = document.querySelectorAll(".confirmtext");
-let AantalInputs = document.querySelectorAll(".aantal");
-let PrijsElementen = document.querySelectorAll(".Prijs");
+const Sluiten = document.querySelectorAll(".Sluiten");
+const AantalInputs = document.querySelectorAll(".aantal");
+const PrijsElementen = document.querySelectorAll(".Prijs");
 const Prijzen = [21.99, 14.99, 17.99, 19.99, 24.99, 34.99, 28.99, 9.99];
 const Toevoegen = document.querySelectorAll(".toevoegen");
 const Verwijderen = document.querySelectorAll(".verwijderen");
 const Winkelmandje = document.querySelector(".winkelmandje");
+const WinkelMandjeToggle = document.querySelector(".winkelmandjetoggle");
+const Totaal = document.querySelector('.totaal');
 
 OpenOverlayButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -17,42 +18,52 @@ OpenOverlayButtons.forEach((button) => {
   });
 });
 
-Annuleren.forEach((button) => {
+Sluiten.forEach((button) => {
   button.addEventListener("click", () => {
-    const AnnulerenId = button.getAttribute("data-target");
-    const AnnulerenBestel = document.querySelector(AnnulerenId);
+    const SluitenId = button.getAttribute("data-target");
+    const SluitenBestel = document.querySelector(SluitenId);
 
-    AnnulerenBestel.classList.add("hidden");
+    SluitenBestel.classList.add("hidden");
   });
 });
 
 AantalInputs.forEach(function (aantalInput, index) {
-  aantalInput.addEventListener("input", function () {
+  aantalInput.addEventListener("input", () => {
     let Aantal = aantalInput.value;
 
     let NieuwePrijs = Prijzen[index] * Aantal;
 
-    PrijsElementen[index].textContent =
-      "Prijs: €" + NieuwePrijs.toFixed(2) + "PP";
+    PrijsElementen[index].textContent = "€" + NieuwePrijs.toFixed(2) + "PP";
   });
+});
+
+
+WinkelMandjeToggle.addEventListener("click", () => {
+  if (Winkelmandje.classList.contains("translate-x-[20rem]")) {
+    Winkelmandje.classList.remove("translate-x-[20rem]");
+  } else {
+    Winkelmandje.classList.add("translate-x-[20rem]");
+  }
 });
 
 Toevoegen.forEach((button) => {
-  button.addEventListener("click", () => {
-    const AnnulerenId = button.getAttribute("data-target");
-    const AnnulerenBestel = document.querySelector(AnnulerenId);
+  button.addEventListener('click', () => {
+    const ToevoegenId = button.getAttribute("data-target");
+    const ToevoegenMandje = document.querySelector(ToevoegenId);
 
-    AnnulerenBestel.classList.add("hidden");
-  });
-});
+    ToevoegenMandje.classList.remove('hidden');
+
+    alert("Toegevoegd");
+  })
+})
 
 Verwijderen.forEach((button) => {
-  button.addEventListener("click", () => {
-    const AnnulerenId = button.getAttribute("data-target");
-    const AnnulerenBestel = document.querySelector(AnnulerenId);
+  button.addEventListener('click', () => {
+    const VerwijderenId = button.getAttribute("data-target");
+    const VerwijderenMandje = document.querySelector(VerwijderenId);
 
-    AnnulerenBestel.classList.add("hidden");
-  });
-});
+    VerwijderenMandje.classList.add('hidden');
 
-Winkelmandje.addEventListener("click", () => {});
+    alert("Verwijderd");
+  })
+})

@@ -1,8 +1,0 @@
-Deep Red: #AA0724
-Burnt Orange: #FF8C42
-Charcoal Black: #1E1E1E
-Light Green: #8BC34A
-Mustard Yellow: #FFC107
-Deep Purple: #673AB7
-Warm Brown: #8D6E63
-Donker groen: #023f30
