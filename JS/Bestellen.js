@@ -8,6 +8,7 @@ const Verwijderen = document.querySelectorAll(".verwijderen");
 const Winkelmandje = document.querySelector(".winkelmandje");
 const WinkelMandjeToggle = document.querySelector(".winkelmandjetoggle");
 const Totaal = document.querySelector(".totaal");
+const Afrekenen = document.querySelector('.afrekenen');
 
 OpenOverlayButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -79,3 +80,9 @@ Verwijderen.forEach((button) => {
     alert("Verwijderd");
   });
 });
+
+Afrekenen.addEventListener('click', () => {
+  let OrderDetails = `Bedankt voor uw bestelling \n Uw totaal is: &#x20AC;${Totaal.value},-`;
+
+  alert(OrderDetails);
+})
