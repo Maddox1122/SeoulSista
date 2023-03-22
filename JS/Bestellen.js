@@ -7,7 +7,7 @@ const Toevoegen = document.querySelectorAll(".toevoegen");
 const Verwijderen = document.querySelectorAll(".verwijderen");
 const Winkelmandje = document.querySelector(".winkelmandje");
 const WinkelMandjeToggle = document.querySelector(".winkelmandjetoggle");
-const Totaal = document.querySelector('.totaal');
+const Totaal = document.querySelector(".totaal");
 
 OpenOverlayButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -20,23 +20,29 @@ OpenOverlayButtons.forEach((button) => {
 
 Sluiten.forEach((button) => {
   button.addEventListener("click", () => {
-    const SluitenId = button.getAttribute("data-target");
-    const SluitenBestel = document.querySelector(SluitenId);
+    const SluitenID = button.getAttribute("data-target");
+    const SluitenInfo = document.querySelector(SluitenID);
 
-    SluitenBestel.classList.add("hidden");
+    SluitenInfo.classList.add("hidden");
   });
 });
 
-AantalInputs.forEach(function (aantalInput, index) {
-  aantalInput.addEventListener("input", () => {
-    let Aantal = aantalInput.value;
+function updateTotaal() {
+  let totaalPrijs = 0;
+  PrijsElementen.forEach(function (prijsElement, index) {
+    let Aantal = AantalInputs[index].value;
+    let NieuwePrijs = Prijzen[index] * Aantal - Prijzen[index];
+    prijsElement.textContent = "Prijs: €" + NieuwePrijs.toFixed(2) + "PP";
+    totaalPrijs += NieuwePrijs;
+  });
+  Totaal.value = (totaalPrijs).toFixed(2);
+}
 
-    let NieuwePrijs = Prijzen[index] * Aantal;
-
-    PrijsElementen[index].textContent = "€" + NieuwePrijs.toFixed(2) + "PP";
+AantalInputs.forEach(function (aantalInput) {
+  aantalInput.addEventListener("input", function () {
+    updateTotaal();
   });
 });
-
 
 WinkelMandjeToggle.addEventListener("click", () => {
   if (Winkelmandje.classList.contains("translate-x-[20rem]")) {
@@ -46,24 +52,30 @@ WinkelMandjeToggle.addEventListener("click", () => {
   }
 });
 
-Toevoegen.forEach((button) => {
-  button.addEventListener('click', () => {
+Toevoegen.forEach((button, index) => {
+  button.addEventListener("click", () => {
     const ToevoegenId = button.getAttribute("data-target");
     const ToevoegenMandje = document.querySelector(ToevoegenId);
 
-    ToevoegenMandje.classList.remove('hidden');
+    ToevoegenMandje.classList.remove("hidden");
 
     alert("Toegevoegd");
-  })
-})
+
+    Totaal.value = (
+      parseFloat(Totaal.value) = parseFloat(Prijzen[index])
+    ).toFixed(2);
+
+    updateTotaal();
+  });
+});
 
 Verwijderen.forEach((button) => {
-  button.addEventListener('click', () => {
+  button.addEventListener("click", () => {
     const VerwijderenId = button.getAttribute("data-target");
     const VerwijderenMandje = document.querySelector(VerwijderenId);
 
-    VerwijderenMandje.classList.add('hidden');
+    VerwijderenMandje.classList.add("hidden");
 
     alert("Verwijderd");
-  })
-})
+  });
+});
