@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./CSS/menu.css">
-    <link rel="stylesheet" href="./CSS/main.css">
     <title>Menu - Seoul Sista</title>
 </head>
 <!--De header-->
-<body class=" font-mono h-screen bg-[#f0bebb] select-none overflow-x-hidden">
-        <header class="text-white text-2xl bg-[#252525] relative flex">
-            <div class="mr-6">
-                <ul class="flex justify-end absolute right-4 top-[15px] font-semibold text-[30px]">
-                    <li class="p-4 duration-300 link link-underline link-underline-black"><a href="#">Menu</a></li>
-                    <li class="p-4 duration-300 link link-underline link-underline-black"><a
-                            href="./Bestellen.html">Bestellen</a></li>
-                    <li class="p-4 duration-300 link link-underline link-underline-black"><a
-                            href="./informatie.html">Info</a></li>
-                </ul>
-            </div>
-            <div>
-                <a class="max-[450px]:pointer-events-none" href="./index.html"><img
-                        class="py-2 max-[350px]:opacity-0 hover:rotate-[360deg] duration-1000"
-                        src="./Media/logo_transparant_5.png" alt="Logo Seoul Sista" width="100px"></a>
-            </div>
-        </header>
+<body class="h-screen bg-[#f0bebb] select-none overflow-x-hidden">
+    <header class="text-white text-2xl bg-[#252525] relative flex">
+        <div class="mr-6">
+            <ul class="flex justify-end absolute right-4 top-[7px] font-semibold text-[30px]">
+                <li class="p-4 duration-300 link link-underline link-underline-black"><a href="./menu.html">Menu</a></li>
+                <li class="p-4 duration-300 link link-underline link-underline-black"><a
+                        href="./Bestellen.html">Bestellen</a></li>
+                <li class="p-4 duration-300 link link-underline link-underline-black"><a
+                        href="./informatie.html">Info</a></li>
+            </ul>
+        </div>
+        <div>
+            <a class="max-[450px]:pointer-events-none" href="./index.html"><img
+                    class="py-2 max-[350px]:opacity-0 hover:rotate-[360deg] duration-1000"
+                    src="./Media/logo_transparant_5.png" alt="Logo Seoul Sista" width="75px"></a>
+        </div>
+    </header>
 
     <!--img van de header-->
     <header class="bg-[url('./Media/menuhead.jpg')] bg-fixed flex items-center justify-center h-[50vh]">
@@ -35,11 +34,32 @@
     </header>
 
     <!--Welkom text-->
-    <div id="welkom" class="mt-3 pb-50px w-[450px] text-center mx-auto text-gray-800 flex items-center flex-col">
+    <div id="welkom" class="mt-3 pb-50px w-[450px] text-center items-center float-right">
         <h2 class="text-[#084434] font-semibold text-[32px]">Welkom</h2>
         <p class="max-w-[450px] text-[18px] leading-loose tracking-wide">
-            Wij zijn een all-you-can-eat restaurant waar je voor een vaste prijs kunt dineren. Hierdoor kun je genieten van al onze gerechten en de Koreaanse keuken ontdekken.</p> <br>
+            Wij zijn een all-you-can-eat restaurant waar je voor een <strong>vaste prijs</strong> kunt dineren. Hierdoor kun je genieten van al onze gerechten en de Koreaanse keuken ontdekken.</p> <br>
     </div>
+        <!--Prijzen & Uren-->
+        <div id="prijzenUren" class="p-[25px]">
+            <h3 class="font-thin ml-20 pl-20 text-[28px]">열기</h3>
+            <h2 h2 class="text-[#084434] font-semibold ml-20 pl-20 text-[32px]">Pijzen & Uren</h2><br>
+                <div id="" class="bg-[#084434] w-[450px] text-center text-white m-7 p-7 leading-loose tracking-wide">
+                    <p>Diensten maandag - donderdag<br>
+                    Ploeg 1: vanaf 17.00 uur • <strong>€35,00</strong><br>
+                    Ploeg 2: vanaf 20.00 uur • <strong>€35,00</strong><br>
+                    Kinderen van 4 t/m 10 jaar • <strong>€15,50</strong><br><br>
+                    
+                    
+                    Diensten vrijdag – zondag<br>
+                    Ploeg 1: vanaf 17.00 uur • <strong>€37,00</strong><br>
+                    Ploeg 2: vanaf 20.00 uur • <strong>€37,00</strong><br>
+                    Kinderen van 4 t/m 10 jaar • <strong>€15,50</strong><br><br></p>
+                    
+                    
+                    <p class="text-[13px]">Op feestdagen geldt een afwijkend tarief.<br>
+                    Dessert inbegrepen / exclusief drankjes</p>
+                </div>
+        </div>
 
     <!--img-->
     <div class="bg-[url('./Media/soju.jpg')] flex items-center justify-center h-[60vh]">
@@ -50,10 +70,14 @@
     <div id="menu" class="mt-3 p-2 w-[100%] text-center">
         <h3 class="text-[#084434] font-thin text-[28px]">메뉴</h3>
         <h2 h2 class="text-[#084434] font-semibold text-[32px]">Ons Menu</h2>
+        <!--Side Dish header-->
+        <div class="bg-[url('./Media/kimchi-banner.jpg')] bg-cover mx-[50vh] w-[50%] h-[15vh]  mt-20 flex items-center justify-center">
+            <h2 class="bg-black px-6 text-[40px] text-[#f0bebb] font-mono">Side Dishes</h2>
+        </div>
         <p class="p-5 text-gray-800">De bekendste banchan is kimchi, gemaakt van gefermenteerde<br> groenten en heeft een verfrissende zure en kruidige smaak.</p>
         <!--Side Dish-->
         <div id="sideDish" class="flex text-center">
-            <div id="sideDish1" class="w-[63%]">
+            <div class="w-[63%]">
                 <p class="font-semibold text-[18px]">Kimchi</p>  
                 <p class="font-thin text-gray-800">Kimchi</p><br>
 
@@ -71,26 +95,28 @@
                 <p class="font-thin text-gray-800">Spruiten</p>
             </div>
         </div>
+        <!--BBQ header-->
+        <div class="bg-[url('./Media/bbq-banner.jpg')] bg-cover mx-[50vh] w-[50%] h-[15vh] mt-20 flex items-center justify-center">
+            <h2 class="bg-[#084434] px-6 text-[40px] text-[#f0bebb] font-mono">Barbecue</h2>
+        </div>
+        <!--BBQ-->
         <p class="p-5 text-gray-800">Een variatie aan voorgemarineerd vlees,<br> groenten en zeevruchten die direct gegrild kunnen<br> worden op de BBQ</p>
         <div id="barbecue" class="flex text-center">
-            <div id="barbecue1" class="w-[63%]">
+            <div class="w-[60%]">
                 <p class="font-semibold text-[18px]">Ssamguybsal Gui</p>  
                 <p class="font-thin text-gray-800">Varkensbuik</p><br>
 
                 <p class="font-semibold text-[18px]">Deungshim Gui</p>   
                 <p class="font-thin text-gray-800">Ossenhaas van rundvlees</p><br>
 
-                <p class="font-semibold text-[18px]">Yan Go Gi Gui</p>   
-                <p class="font-thin text-gray-800">Lam</p>
+                <p class="font-semibold text-[18px]">Yan Go Gi Gui</p>  
+                <p class="font-thin text-gray-800">Lam</p><br>
 
                 <p class="font-semibold text-[18px]">La Kalbi</p>   
-                <p class="font-thin text-gray-800">Rundvleesribben</p>
+                <p class="font-thin text-gray-800">Rundvleesribben</p><br>
 
                 <p class="font-semibold text-[18px]">Gegogi Chu Gi Gui</p>   
-                <p class="font-thin text-gray-800">Gesneden rundvlees</p>
-
-                <p class="font-semibold text-[18px]">Yache Gui</p>   
-                <p class="font-thin text-gray-800">Groenten</p>
+                <p class="font-thin text-gray-800">Gesneden rundvlees</p><br>
 
                 <p class="font-semibold text-[18px]">Dak Bul Go Gi</p>   
                 <p class="font-thin text-gray-800">Kipfilet</p>
@@ -100,24 +126,152 @@
                 <p class="font-thin text-gray-800">Garnalen</p><br>
 
                 <p class="font-semibold text-[18px]">Ohjinge Gui</p>   
-                <p class="font-thin text-gray-800">Inktvis</p>
+                <p class="font-thin text-gray-800">Inktvis</p><br>
 
                 <p class="font-semibold text-[18px]">Sebul Gogi Yang Nyum Gyui</p>   
-                <p class="font-thin text-gray-800">Bulgogo gekruid rundvlees</p>
+                <p class="font-thin text-gray-800">Bulgogo gekruid rundvlees</p><br>
 
                 <p class="font-semibold text-[18px]">Daeji Bulgogi Yang Nyum Gui</p>   
-                <p class="font-thin text-gray-800">Bulgogi gekruid varkensvlees</p>
+                <p class="font-thin text-gray-800">Bulgogi gekruid varkensvlees</p><br>
 
                 <p class="font-semibold text-[18px]">Ohri Gui</p>   
-                <p class="font-thin text-gray-800">Eendenborst</p>
-
-                <p class="font-semibold text-[18px]">Sengsun Gui</p>   
-                <p class="font-thin text-gray-800">Vis filet</p>
+                <p class="font-thin text-gray-800">Eendenborst</p><br>
 
                 <p class="font-semibold text-[18px]">Scallops + <strong>€ 2,00</strong></p>   
                 <p class="font-thin text-gray-800">2 sint-jakobsschelpen</p>
             </div>
         </div>
+        <!--stoofschotels  header-->
+        <div class="bg-[url('./Media/stew-banner.jpg')] bg-center bg-cover mx-[50vh] w-[50%] h-[15vh]  mt-20 flex items-center justify-center">
+            <h2 class="bg-black px-6 text-[40px] text-[#f0bebb] font-mono">Stoofschotels </h2>
+        </div>
+        <p class="p-5 text-gray-800">Huisgemaakte stoofschotels en soepen gemaakt door onze koks.</p>
+        <!--stoofschotels -->
+        <div id="stoofschotel1" class="flex text-center">
+            <div class="w-[63%]">
+                <p class="font-semibold text-[18px]">Soon Du Bu Chigue</p>  
+                <p class="font-thin text-gray-800">Zeevruchten tofu stoofpot</p><br>
+    
+                <p class="font-semibold text-[18px]">Yukgeajang</p>   
+                <p class="font-thin text-gray-800">Rundvlees & Groentesoep</p><br>
+    
+                <p class="font-semibold text-[18px]">Kimchi Chigae</p>   
+                <p class="font-thin text-gray-800">Kimchi-stoofpot</p>
+            </div>
+            <div id="stoofschotel2">
+                <p class="font-semibold text-[18px]">Deunjang Chingae</p>   
+                <p class="font-thin text-gray-800">Miso Soep</p><br>
+    
+                <p class="font-semibold text-[18px]">Kalbi Tang</p>   
+                <p class="font-thin text-gray-800">Runderribsoep</p><br>
+
+                <p class="font-semibold text-[18px]">Kori Gomtang</p>   
+                <p class="font-thin text-gray-800">Ossenstaart soep</p>
+            </div>
+        </div>
+            <!--kimbap  header-->
+            <div class="bg-[url('./Media/kimbap-banner.jpg')] bg-center bg-cover mx-[50vh] w-[50%] h-[15vh]  mt-20 flex items-center justify-center">
+                <h2 class="bg-black px-6 text-[40px] text-[#f0bebb] font-mono">Kimbap</h2>
+            </div>
+            <p class="p-5 text-gray-800">Een populair Koreaans en Japans gerecht<br> bestaande uit gekookte rijst gerold in vellen zeewier.</p>
+            <!--kimbap-->
+            <div id="kimbap1" class="flex text-center">
+                <div class="w-[63%]">
+                    <p class="font-semibold text-[18px]">Kaelifonia</p>  
+                    <p class="font-thin text-gray-800">Californië rol</p><br>
+            
+                    <p class="font-semibold text-[18px]">Yone Kimbab</p>   
+                    <p class="font-thin text-gray-800">Zalm kimbap</p><br>
+
+                    <p class="font-semibold text-[18px]">Kimbap</p>   
+                    <p class="font-thin text-gray-800">Vegetarische kimbap</p><br>
+            
+                    <p class="font-semibold text-[18px]">Chamchi Kimbab</p>   
+                    <p class="font-thin text-gray-800">Pittige Tonijn Kimbap</p>
+                </div>
+                <div id="kimbap2">
+                    <p class="font-semibold text-[18px]">Yang Baechu Bosam</p>   
+                    <p class="font-thin text-gray-800">Kool verpakt</p><br>
+            
+                    <p class="font-semibold text-[18px]">Cucumber Sushi</p>   
+                    <p class="font-thin text-gray-800">Komkommer sushi</p><br>
+        
+                    <p class="font-semibold text-[18px]">Avocado Sushi</p>   
+                    <p class="font-thin text-gray-800">Avocado-sushi</p>
+                </div>
+            </div>
+            <!--pannenkoek  header-->
+            <div class="bg-[url('./Media/pannenkoek-banner.jpg')] bg-center bg-cover mx-[50vh] w-[50%] h-[15vh]  mt-20 flex items-center justify-center">
+                <h2 class="bg-black px-6 text-[40px] text-[#f0bebb] font-mono">Pannenkoek</h2>
+            </div>
+            <p class="p-5 text-gray-800">Koreaanse pannenkoek gemengd met verschillende toppings<br> zoals kimchi en zeevruchten. Probeer de krokante pannenkoek in<br> sojasaus te dopen om de smaak te versterken.</p>
+            <!--pannenkoek-->
+            <div id="pannenkoek1" class="flex text-center">
+                <div class="w-[63%]">
+                    <p class="font-semibold text-[18px]">Pa Chen</p>   
+                    <p class="font-thin text-gray-800">Zeevruchten pannenkoek</p>
+                </div>
+                <div id="pannenkoek2">
+                    <p class="font-semibold text-[18px]">Kimchi Chen</p>   
+                    <p class="font-thin text-gray-800">Kimchi pannenkoek</p>
+                </div>
+            </div>
+            <!--Pan  header-->
+            <div class="bg-[url('./Media/panfried-banner.jpg')] bg-center bg-cover mx-[50vh] w-[50%] h-[15vh]  mt-20 flex items-center justify-center">
+                <h2 class="bg-black px-6 text-[40px] text-[#f0bebb] font-mono">Pan gebakken</h2>
+            </div>
+            <p class="p-5 text-gray-800">Koreaanse pan gebakken gerechten kunnen<br> worden gemaakt van vlees, vis, schaaldieren of groenten.</p>
+            <!--Pan-->
+            <div id="Pan1" class="flex text-center">
+                <div class="w-[63%]">
+                    <p class="font-semibold text-[18px]">Kimchi Mandu</p>  
+                    <p class="font-thin text-gray-800">Kimchi dumplings: varkensvlees en rundvlees</p><br>
+                
+                    <p class="font-semibold text-[18px]">Gun Mandu</p>   
+                    <p class="font-thin text-gray-800">Gefrituurde knoedels: varkensvlees en rundvlees</p><br>
+    
+                    <p class="font-semibold text-[18px]">Go Deunge Gui</p>   
+                    <p class="font-thin text-gray-800">Gegrilde makreel</p><br>
+                
+                    <p class="font-semibold text-[18px]">Dak Kochi</p>   
+                    <p class="font-thin text-gray-800">Kip spies</p>
+                </div>
+                <div id="Pan2">
+                    <p class="font-semibold text-[18px]">Yone Gui</p>   
+                    <p class="font-thin text-gray-800">Gegrilde zalm</p><br>
+                
+                    <p class="font-semibold text-[18px]">Yangkkochi</p>   
+                    <p class="font-thin text-gray-800">Lams spiesje</p><br>
+
+                    <p class="font-semibold text-[18px]">Sewoo Kochi</p>   
+                    <p class="font-thin text-gray-800">Garnalen spiesjes</p><br>
+            
+                    <p class="font-semibold text-[18px]">Yang Gal Bi Gui + <strong>€ 2,00</strong></p>   
+                    <p class="font-thin text-gray-800">Lamsribben</p>
+                </div>
+            </div>
+                <!--Roerbak  header-->
+                <div class="bg-[url('./Media/roerbak-banner.jpg')] bg-center bg-cover mx-[50vh] w-[50%] h-[15vh]  mt-20 flex items-center justify-center">
+                    <h2 class="bg-black px-6 text-[40px] text-[#f0bebb] font-mono">Roerbak</h2>
+                </div>
+                <p class="p-5 text-gray-800">Roerbak is gemaakt met eenvoudige Aziatisch<br> geïnspireerde ingrediënten die in slechts 5 minuten gaar zijn. <br>Alles tot in de perfectie bereid.</p>
+                <!--Roerbak-->
+                <div id="Roerbak1" class="flex text-center">
+                    <div class="w-[63%]">
+                        <p class="font-semibold text-[18px]">Dak Gangchung</p>  
+                        <p class="font-thin text-gray-800">Zoete kippenvleugels</p><br>
+                    
+                        <p class="font-semibold text-[18px]">Chapchae</p>   
+                        <p class="font-thin text-gray-800">Groente met aardappelnoedels</p>
+                    </div>
+                    <div id="Roerbak2">
+                        <p class="font-semibold text-[18px]">Dukbokgi</p>   
+                        <p class="font-thin text-gray-800">Zeevruchten rijstwafel</p><br>
+                
+                        <p class="font-semibold text-[18px]">Yakiwoodong</p>   
+                        <p class="font-thin text-gray-800">Yaki udon-noedels</p>
+                    </div>
+                </div>
     </div>
 
     <!--How to eat text + img-->
@@ -131,31 +285,6 @@
         <h2 id= neonText class="text-[30px] text-center font-mono">“…Falling autumn leaves<br>Remind me of you.<br>You made the descent look beautiful,<br>And brought color<br>To the very ground you fell on.”</h2>
     </div>
 
-    <!--Prijzen & Uren-->
-    <div class="float-right">
-        <h3 class="font-thin text-[28px]">열기</h3>
-        <h2 h2 class="text-[#084434] font-semibold text-[32px]">Pijzen & Uren</h2>
-    </div>
-
-    <div id="prijzenUren" class="p-[25px] flex">
-            <div id="" class="bg-[#084434] w-[450px] text-center text-white p-7 leading-loose tracking-wide float-left">
-                <p class="text-[17px]">Wij zijn een all-you-can-eat restaurant waar je voor een vaste prijs kunt dineren. Hierdoor kun je genieten van al onze gerechten en de Koreaanse keuken ontdekken.</p> <br>
-                <p>Diensten maandag - donderdag<br>
-                Ploeg 1: vanaf 17.00 uur • <strong>€35,00</strong><br>
-                Shift 2: vanaf 20.00 uur • <strong>€35,00</strong><br>
-                Kinderen van 4 t/m 10 jaar • <strong>€15,50</strong><br><br>
-                
-                
-                Diensten vrijdag – zondag<br>
-                Ploeg 1: vanaf 17.00 uur • <strong>€37,00</strong><br>
-                Shift 2: vanaf 20.00 uur • <strong>€37,00</strong><br>
-                Kinderen van 4 t/m 10 jaar • <strong>€15,50</strong><br><br></p>
-                
-                
-                <p class="text-[13px]">Op feestdagen geldt een afwijkend tarief.<br>
-                Dessert inbegrepen / exclusief drankjes</p>
-            </div>
-    </div>
 
     <!--Footer-->
     <footer class="bg-[#252525] flex justify-center flex-row mt-4 text-white px-6 pb-[8rem] pt-[4rem]">
@@ -240,3 +369,4 @@
 </html>
 </body>
 </html>
+                                  
