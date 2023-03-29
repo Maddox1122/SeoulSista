@@ -2,3 +2,27 @@ body {
   font-family: MuseoSans-300;
   background-color: #f0bebb;
 }
+#neonText {
+  color: #fef8f8;
+  text-shadow:
+      0 0 7px #7F00FF,
+      0 0 10px #fff,
+      0 0 21px #7F00FF,
+      0 0 42px #7F00FF,
+      0 0 82px #7F00FF,
+      0 0 92px #7F00FF,
+      0 0 102px #7F00FF,
+      0 0 151px #7F00FF;
+}
+#neonText2 {
+  color: #fef8f8;
+  text-shadow:
+      0 0 7px #084434,
+      0 0 10px #fff,
+      0 0 21px #084434,
+      0 0 42px #084434,
+      0 0 82px #084434,
+      0 0 92px #084434,
+      0 0 102px #084434,
+      0 0 151px #084434;
+}

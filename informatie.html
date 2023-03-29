@@ -13,51 +13,59 @@
 <body>
     <!-- social: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image -->
     <!-- NavBar -->
-    <header class="text-white text-2xl bg-[#252525] relative flex">
-        <div class="mr-6">
-            <ul class="flex justify-end absolute right-4 top-[7px] font-semibold text-[30px]">
-                <li class="p-4 duration-300 link link-underline link-underline-black"><a href="#">Menu</a></li>
-                <li class="p-4 duration-300 link link-underline link-underline-black"><a
-                        href="./Bestellen.html">Bestellen</a></li>
-                <li class="p-4 duration-300 link link-underline link-underline-black"><a
-                        href="./informatie.html">Info</a></li>
-            </ul>
-        </div>
-        <div>
-            <a class="max-[450px]:pointer-events-none" href="./index.html"><img
-                    class="py-2 max-[350px]:opacity-0 hover:rotate-[360deg] duration-1000"
-                    src="./Media/logo_transparant_5.png" alt="Logo Seoul Sista" width="75px"></a>
-        </div>
-    </header>
-    <header class="bg-[url('./Media/Headerimg.jpg')] bg-blend-darken flex items-center justify-center bg-top h-[25vh]">
-        <h2 class="text-green-500 text-[70px] font-extrabold font-['Helvetica']">Seoul Sista</h2>
-    </header>
+    <body class="h-screen bg-[#f0bebb] select-none overflow-x-hidden">
+        <header class="text-white text-2xl bg-[#252525] relative flex">
+            <div class="mr-6">
+                <ul class="flex justify-end absolute right-4 top-[7px] font-semibold text-[30px]">
+                    <li class="p-4 duration-300 link link-underline link-underline-black"><a href="./menu.html">Menu</a></li>
+                    <li class="p-4 duration-300 link link-underline link-underline-black"><a
+                            href="./Bestellen.html">Bestellen</a></li>
+                    <li class="p-4 duration-300 link link-underline link-underline-black"><a
+                            href="./informatie.html">Info</a></li>
+                </ul>
+            </div>
+            <div>
+                <a class="max-[450px]:pointer-events-none" href="./index.html"><img
+                        class="py-2 max-[350px]:opacity-0 hover:rotate-[360deg] duration-1000"
+                        src="./Media/logo_transparant_5.png" alt="Logo Seoul Sista" width="75px"></a>
+            </div>
+        </header>
     
-    <div class="container">
-        <div class="welcome">
-            <h1><b>WELCOME TO SEOUL SISTA</b></h1>
+    <!--img van de header-->
+        <header class="bg-[url('./Media/menuhead.jpg')] bg-fixed flex items-center justify-center h-[50vh]">
+            <h2 id="neonText2" class="text-[70px] font-extrabold font-['Helvetica']">Seoul Sista</h2>
+        </header>
+        </header>
+    
+    <div class="flex items-center justify-center mt-8 mb-8">
+        <div class="text-center max-w-md mr-6">
+            <h2 class="text-[#084434] font-semibold text-[42px]"><b>WELCOME TO SEOUL SISTA</b></h2>
     <p>Seoul Sista is the new talk of the town in Rotterdam. At Korean barbecue you prepare your own meat and vegetables on a grill that is built into the table. We are an all-you-can-eat restaurant where you can dine for a fixed price. This allows you to enjoy all our dishes and discover the Korean cuisine.</br>
 
         If you come by car, you can easily park at our neighbors of the Q-park Weena.</br>
         
         We are open from 4:45pm to 11:00pm and operate 2 shifts. In the overview below you can see our prices.</br>
     </br>
-        <b>Shifts monday – thursday</b></br>
+        <b class="font-semibold text-[18px]">Shifts monday – thursday</b></br>
         wednesday closed</br>
         Shift 1: From 5pm • 35,00</br>
         Shift 2: From 8pm • 35,00</br>
-        Children from 4 t0 10 years • 15,50</br>
+        Children from 4 t0 10 years • 15,50 </br>
     </br>
-        <b>Shifts friday – sunday</b></br>
+        <b class="font-semibold text-[18px]">Shifts friday – sunday</b></br>
         Shift 1: From 5pm • 37,00</br>
         Shift 2: From 8pm • 37,00</br>
         Children from 4 t0 10 years • 15,5</p>
         </div>
-            <img src="./Media/welcome.jpg" class="welcomeimg">
-    </div>
-    <div style="clear:both;"></div>
-    <div class="contact">
-    <h2><b>CONTACT</b></h2>
+            <img src="./Media/welcome.jpg" class="max-w-md">
+        </div>
+        <div style="clear:both;"></div>
+        
+        <section class="bg-fixed h-screen bg-cover max-h-96" style="background-image: url(./Media/info-banner.jpg)"></section>
+    <div class="flex items-center justify-center">
+        <img src="./Media/korea.png" class="max-w-xs float-left mt-8 mr-6">
+        <div class="text-center max-w-md mt-8">
+    <h2 class="text-[#084434] font-semibold text-[42px]"><b>CONTACT</b></h2>
     <p>Weena 296 (Central station)</br>
         3012 NJ Rotterdam</br>
     </br>
@@ -66,7 +74,7 @@
         
     </br>
         
-        <b>OPENING HOURS</b></br>
+        <b class="font-semibold text-[18px]">OPENING HOURS</b></br>
     </br>
         Monday	4:45pm – 11:00pm</br>
         Tuesday	4:45pm – 11:00pm</br>
@@ -77,13 +85,28 @@
         Sunday	4:45pm – 11:00pm</br>
         The kitchen closes at 22:00, all dishes can be ordered until 22:00, after this, you can continue your dinner.</br>
     </br>
-        <b>PARKING</b></br>
+        <b class="font-semibold text-[18px]">PARKING</b></br>
         Q-PARK Weena</br>
         Karel Doormanstraat 10</br>
         3012 GJ Rotterdam</p>
     </div>
-    <img src="./Media/korea.png" class="welcomeimg">
-    <footer class="bg-[#252525] flex justify-center flex-row mt-4 text-white px-6 pb-[8rem] pt-[4rem]">
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.588655921205!2d4.47159391578532!3d51.9232155797056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c43582af4e11e9%3A0x3d6d324e117362ef!2sSeoul%20Sista%20Korean%20BBQ%20-%20Rotterdam%20Weena!5e0!3m2!1sen!2snl!4v1680096786142!5m2!1sen!2snl" width="1688" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="text-center">
+        <div class="flex items-center justify-center">
+            <div class="h-96 max-w-md "; style="margin-bottom: -17px; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Media/social.jpg)">
+                <div class="text-white flex items-center justify-center h-[50vh]">
+                    <div>
+                <h1 style="font-size:50px">LET’S GET SOCIAL!</h1>
+                <p>FOLLOW US ON INSTAGRAM</p>
+                <button class="p-4 bg-red-200 inline-block hover:bg-emerald-900">@seoulsistalove #seoulsista</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+<footer class="bg-[#252525] flex justify-center flex-row mt-4 text-white px-6 pb-[8rem] pt-[4rem]">
         <div class="grid grid-cols-4 gap-12 max-[900px]:grid-cols-none max-[900px]:grid-rows-4 max-[820px]:pb-none">
             <div class="">
                 <h4 class="text-[30px] font-semibold text-[#f0bebb]">Locaties:</h4>
@@ -158,7 +181,7 @@
             </div>
             <div class="text-white self-center">
                 <h4 class="opacity-75">© 2023 SEOUL SISTA.</h4>
-                <h4>Site built by Maddox, Jasmine, Emily</h4>
+                <h4>Site built by Maddox, Yasmin, Emily</h4>
             </div>
         </div>
 
