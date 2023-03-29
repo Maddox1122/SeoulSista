@@ -1,171 +1,216 @@
 <!DOCTYPE html>
 <html lang="nl-NL">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seoul Sista Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./CSS/main.css">
-    <link rel="shortcut icon" href="./Media/logo_transparant_5.png" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./Media/logo_transparant_5.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<body class="h-screen bg-[#f0bebb] select-none overflow-x-hidden font-['MuseoSans-300']">
+  <body
+    class="h-screen bg-[#f0bebb] select-none overflow-x-hidden font-['MuseoSans-300']"
+  >
     <header class="text-white text-2xl bg-[#252525] relative flex">
-        <div class="mr-6">
-            <ul class="flex justify-end absolute right-4 top-[15px] font-semibold text-[30px]">
-                <li class="p-4 duration-300 link link-underline link-underline-black"><a href="#">Menu</a></li>
-                <li class="p-4 duration-300 link link-underline link-underline-black"><a
-                        href="./Bestellen.html">Bestellen</a></li>
-                <li class="p-4 duration-300 link link-underline link-underline-black"><a
-                        href="./informatie.html">Info</a></li>
-            </ul>
+      <div class="mr-6">
+        <ul
+          class="flex justify-end absolute right-4 top-[15px] font-semibold text-[30px]"
+        >
+          <li class="p-4 duration-300 link link-underline link-underline-black">
+            <a href="./menu.html">Menu</a>
+          </li>
+          <li class="p-4 duration-300 link link-underline link-underline-black">
+            <a href="./Bestellen.html">Bestellen</a>
+          </li>
+          <li class="p-4 duration-300 link link-underline link-underline-black">
+            <a href="./informatie.html">Info</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a class="max-[450px]:pointer-events-none" href="./index.html"
+          ><img
+            class="py-2 max-[350px]:opacity-0 hover:rotate-[360deg] duration-1000"
+            src="./Media/logo_transparant_5.png"
+            alt="Logo Seoul Sista"
+            width="100px"
+        /></a>
+      </div>
+    </header>
+    <header
+      class="bg-[url('./Media/Headerimg.jpg')] bg-blend-darken flex items-center justify-center bg-top h-[25vh]"
+    >
+      <h2 class="neonText text-[70px] font-extrabold font-['Helvetica']">
+        Seoul Sista
+      </h2>
+    </header>
+    <section
+      class="grid grid-cols-2 place-items-center max-[900px]:grid-cols-1 min-[1800px]:grid-cols-4"
+    >
+      <div class="mt-4">
+        <img
+          class="rounded-lg h-auto outline outline-[#f0bebb]"
+          src="./Media/Home-left.jpg"
+          alt="Eten Seoul Sista"
+          width="450px"
+        />
+      </div>
+      <div
+        class="mt-3 p-2 w-[450px] text-center mx-auto text-gray-800 flex items-center flex-col"
+      >
+        <h2 class="font-semibold text-[32px]">Onze Restaurants</h2>
+        <p class="leading-7 max-w-[380px]">
+          Seoul Sista is een Koreaans restaurant dat gevestigd is in het hart
+          van de stad. Het menu biedt een verscheidenheid aan authentieke
+          Koreaanse gerechten, waaronder bibimbap, bulgogi, kimchi jjigae en
+          tteokbokki. Het restaurant is bekend om zijn hoge kwaliteit van
+          voedsel en service, evenals de warme en gezellige sfeer. Het interieur
+          van het restaurant is modern en strak, met subtiele Koreaanse
+          invloeden in het decor. Het is een populaire plek voor zowel lunch als
+          diner, en er is vaak een wachtrij tijdens piekuren. Reserveren wordt
+          aanbevolen om teleurstelling te voorkomen. Seoul Sista heeft ook een
+          aantal vegetarische en veganistische opties op het menu, waardoor het
+          een goede keuze is voor mensen met speciale dieetwensen. Bovendien is
+          het restaurant betaalbaar en biedt het waar voor uw geld. Als u op
+          zoek bent naar een heerlijke Koreaanse maaltijd in een gezellige
+          omgeving, dan is Seoul Sista zeker een bezoek waard!
+        </p>
+      </div>
+      <div class="mt-4">
+        <img
+          class="rounded-lg ml-6 h-auto outline outline-[#f0bebb] min-[900px]:ml-3"
+          src="./Media/Seoul-Sista-Covid-mobile2.png"
+          alt="COVID-19 Stappen"
+          width="450px"
+        />
+        <div
+          class="mt-3 p-2 bg-[#f0bebb] ml-6 rounded-lg w-[450px] text-center mx-auto text-gray-800 flex items-center flex-col pb-8"
+        >
+          <h2 class="font-semibold text-[32px] text-gray-800">
+            Handleiding Corona &uarr;
+          </h2>
+          <p class="leading-[27px] max-w-[380px] mt-4 mx-auto">
+            Voor de Handleiding voor corona kan u hier boven zien of ons
+            persoonlijke een mailtje sturen <br />
+            <span class="duration-300 text-[20px] hover:text-[#FFFFFF]"
+              ><a href="mailto:reservations@seoulsista.nl">Hier</a></span
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        class="mt-3 p-2 ml-6 w-[450px] text-center text-gray-800 flex items-center flex-col"
+      >
+        <h2 class="font-semibold text-[32px]">Seoul Sista Tijdens Corona</h2>
+        <p class="leading-[27px] max-w-[380px]">
+          Seoul Sista is een Koreaans restaurant met meerdere locaties in
+          Nederland. Tijdens de COVID-19 pandemie heeft het restaurant
+          verschillende maatregelen genomen om de veiligheid van klanten en
+          personeel te waarborgen. Om eten te bestellen bij Seoul Sista kunnen
+          klanten ervoor kiezen om het restaurant persoonlijk te bezoeken en hun
+          bestelling af te halen of te laten bezorgen, of om online te bestellen
+          via de website van het restaurant of via bezorgplatforms zoals
+          Thuisbezorgd.nl of Uber Eats. Bij online bestellingen kunnen klanten
+          verschillende betaalmethoden kiezen, waaronder creditcard en iDeal. Om
+          de veiligheid van klanten te waarborgen heeft Seoul Sista strikte
+          hygiëneprotocollen geïmplementeerd, waaronder regelmatige desinfectie
+          van veel aangeraakte oppervlakken, frequent handen wassen door
+          personeel en het gebruik van gezichtsmaskers en handschoenen. Het
+          restaurant moedigt klanten ook aan om afstand te houden bij het
+          ophalen van hun bestelling.
+        </p>
+      </div>
+    </section>
+    <footer
+      class="bg-[#252525] flex justify-center flex-row mt-4 text-white px-6 pb-[8rem] pt-[4rem]"
+    >
+      <div
+        class="grid grid-cols-4 gap-12 max-[900px]:grid-cols-none max-[900px]:grid-rows-4 max-[820px]:pb-none"
+      >
+        <div class="">
+          <h4 class="text-[30px] font-semibold text-[#f0bebb]">Locaties:</h4>
+          <ul class="mt-2">
+            <li class="mt-2 hover:text-[#f0bebb] duration-300">
+              Amsterdam Reguliersdwarsstraat Centraal
+            </li>
+            <li class="mt-2 hover:text-[#f0bebb] duration-300">
+              Rotterdam Hartmanstraat Witte de With
+            </li>
+            <li class="mt-2 hover:text-[#f0bebb] duration-300">
+              Rotterdam Weena Centraal Station
+            </li>
+            <li class="mt-2 hover:text-[#f0bebb] duration-300">
+              Rotterdam Karaoke & Cafe Weena
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <h4 class="text-[#f0bebb] font-semibold text-[30px]">
+            Openingstijden:
+          </h4>
+          <table class="mt-2 table-fixed">
+            <tr>
+              <td>Maandag</td>
+              <td class="pl-6">4:45pm – 11:00pm</td>
+            </tr>
+            <tr>
+              <td>Dinsdag</td>
+              <td class="pl-6">Gesloten</td>
+            </tr>
+            <tr>
+              <td>Woensdag</td>
+              <td class="pl-6">4:45pm – 11:00pm</td>
+            </tr>
+            <tr>
+              <td>Donderdag</td>
+              <td class="pl-6">4:45pm – 11:00pm</td>
+            </tr>
+            <tr>
+              <td>Vrijdag</td>
+              <td class="pl-6">4:45pm – 11:00pm</td>
+            </tr>
+            <tr>
+              <td>Zaterdag</td>
+              <td class="pl-6">4:45pm – 11:00pm</td>
+            </tr>
+            <tr>
+              <td>Zondag</td>
+              <td class="pl-6">4:45pm – 11:00pm</td>
+            </tr>
+          </table>
         </div>
         <div>
-            <a class="max-[450px]:pointer-events-none" href="./index.html"><img
-                    class="py-2 max-[350px]:opacity-0 hover:rotate-[360deg] duration-1000"
-                    src="./Media/logo_transparant_5.png" alt="Logo Seoul Sista" width="100px"></a>
+          <h4 class="font-semibold text-[30px] text-[#f0bebb]">Contact:</h4>
+          <h5>Hartmansstraat 31</h5>
+          <h5>3012 VA Rotterdam</h5>
+          <h5 class="mt-3">
+            <a
+              class="hover:text-[#f0bebb] duration-300"
+              href="telto:010 737 0179"
+              >010 737 0179</a
+            >
+          </h5>
+          <h5>
+            <a
+              class="hover:text-[#f0bebb] duration-300"
+              href="mailto:reservations@seoulsista.nl"
+              >reservations@seoulsista.nl</a
+            >
+          </h5>
+          <h5 class="mt-3">Grand Slam Holding BV</h5>
+          <h5>KVK: 69461546</h5>
         </div>
-    </header>
-    <header class="bg-[url('./Media/Headerimg.jpg')] bg-blend-darken flex items-center justify-center bg-top h-[25vh]">
-        <h2 class="text-green-500 text-[70px] font-extrabold font-['Helvetica']">Seoul Sista</h2>
-    </header>
-    <section class="grid grid-cols-2 place-items-center max-[900px]:grid-cols-1 min-[1800px]:grid-cols-4">
-        <div class="mt-4">
-            <img class="rounded-lg h-auto outline outline-[#f0bebb]" src="./Media/Home-left.jpg" alt="Eten Seoul Sista"
-                width="450px">
+        <div class="text-white self-center">
+          <h4 class="opacity-75">© 2023 SEOUL SISTA.</h4>
+          <h4>Site built by Maddox, Jasmine, Emily</h4>
         </div>
-        <div class="mt-3 p-2 w-[450px] text-center mx-auto text-gray-800 flex items-center flex-col">
-            <h2 class="font-semibold text-[32px]">Onze Restaurants</h2>
-            <p class="leading-7 max-w-[380px]">Seoul Sista is een Koreaans restaurant dat gevestigd is in het hart van
-                de stad. Het menu biedt een
-                verscheidenheid aan authentieke Koreaanse gerechten, waaronder bibimbap, bulgogi, kimchi jjigae en
-                tteokbokki. Het restaurant is bekend om zijn hoge kwaliteit van voedsel en service, evenals de warme en
-                gezellige sfeer.
-
-                Het interieur van het restaurant is modern en strak, met subtiele Koreaanse invloeden in het decor. Het
-                is een populaire plek voor zowel lunch als diner, en er is vaak een wachtrij tijdens piekuren.
-                Reserveren wordt aanbevolen om teleurstelling te voorkomen.
-
-                Seoul Sista heeft ook een aantal vegetarische en veganistische opties op het menu, waardoor het een
-                goede keuze is voor mensen met speciale dieetwensen. Bovendien is het restaurant betaalbaar en biedt het
-                waar voor uw geld.
-
-                Als u op zoek bent naar een heerlijke Koreaanse maaltijd in een gezellige omgeving, dan is Seoul Sista
-                zeker een bezoek waard!</p>
-        </div>
-        <div class="mt-4">
-            <img class="rounded-lg ml-6 h-auto outline outline-[#f0bebb] min-[900px]:ml-3"
-                src="./Media/Seoul-Sista-Covid-mobile2.png" alt="COVID-19 Stappen" width="450px">
-            <div
-                class="mt-3 p-2 bg-[#f0bebb] ml-6 rounded-lg w-[450px] text-center mx-auto text-gray-800 flex items-center flex-col pb-8">
-                <h2 class="font-semibold text-[32px] text-gray-800">Handleiding Corona &uarr;</h2>
-                <p class="leading-[27px] max-w-[380px] mt-4 mx-auto">
-                    Voor de Handleiding voor corona kan u hier boven zien of ons persoonlijke een mailtje sturen <br>
-                    <span class="duration-300 text-[20px] hover:text-[#FFFFFF]"><a
-                            href="mailto:reservations@seoulsista.nl">Hier</a></span>
-                </p>
-            </div>
-        </div>
-        <div class="mt-3 p-2 ml-6 w-[450px] text-center text-gray-800 flex items-center flex-col">
-            <h2 class="font-semibold text-[32px]">Seoul Sista Tijdens Corona</h2>
-            <p class="leading-[27px] max-w-[380px]">Seoul Sista is een Koreaans restaurant met meerdere locaties in
-                Nederland. Tijdens de COVID-19 pandemie
-                heeft het restaurant verschillende maatregelen genomen om de veiligheid van klanten en personeel te
-                waarborgen.
-
-                Om eten te bestellen bij Seoul Sista kunnen klanten ervoor kiezen om het restaurant persoonlijk te
-                bezoeken en hun bestelling af te halen of te laten bezorgen, of om online te bestellen via de website
-                van het restaurant of via bezorgplatforms zoals Thuisbezorgd.nl of Uber Eats. Bij online bestellingen
-                kunnen klanten verschillende betaalmethoden kiezen, waaronder creditcard en iDeal.
-
-                Om de veiligheid van klanten te waarborgen heeft Seoul Sista strikte hygiëneprotocollen geïmplementeerd,
-                waaronder regelmatige desinfectie van veel aangeraakte oppervlakken, frequent handen wassen door
-                personeel en het gebruik van gezichtsmaskers en handschoenen. Het restaurant moedigt klanten ook aan om
-                afstand te houden bij het ophalen van hun bestelling.</p>
-        </div>
-    </section>
-    <footer class="bg-[#252525] flex justify-center flex-row mt-4 text-white px-6 pb-[8rem] pt-[4rem]">
-        <div class="grid grid-cols-4 gap-12 max-[900px]:grid-cols-none max-[900px]:grid-rows-4 max-[820px]:pb-none">
-            <div class="">
-                <h4 class="text-[30px] font-semibold text-[#f0bebb]">Locaties:</h4>
-                <ul class="mt-2">
-                    <li class="mt-2 hover:text-[#f0bebb] duration-300">
-                        Amsterdam
-                        Reguliersdwarsstraat
-                        Centraal
-                    </li>
-                    <li class="mt-2 hover:text-[#f0bebb] duration-300">
-                        Rotterdam
-                        Hartmanstraat
-                        Witte de With
-
-                    </li>
-                    <li class="mt-2 hover:text-[#f0bebb] duration-300">
-                        Rotterdam
-                        Weena
-                        Centraal Station
-
-                    </li>
-                    <li class="mt-2 hover:text-[#f0bebb] duration-300">
-                        Rotterdam
-                        Karaoke & Cafe
-                        Weena
-                    </li>
-                </ul>
-            </div>
-            <div class="">
-                <h4 class="text-[#f0bebb] font-semibold text-[30px]">Openingstijden:</h4>
-                <table class=mt-2 table-fixed">
-                    <tr>
-                        <td>Maandag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
-                    </tr>
-                    <tr>
-                        <td>Dinsdag</td>
-                        <td class="pl-6">Gesloten</td>
-                    </tr>
-                    <tr>
-                        <td>Woensdag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
-                    </tr>
-                    <tr>
-                        <td>Donderdag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
-                    </tr>
-                    <tr>
-                        <td>Vrijdag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
-                    </tr>
-                    <tr>
-                        <td>Zaterdag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
-                    </tr>
-                    <tr>
-                        <td>Zondag</td>
-                        <td class="pl-6">4:45pm – 11:00pm</td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <h4 class="font-semibold text-[30px] text-[#f0bebb]">Contact:</h4>
-                <h5>Hartmansstraat 31</h5>
-                <h5>3012 VA Rotterdam</h5>
-                <h5 class="mt-3"><a class="hover:text-[#f0bebb] duration-300" href="telto:010 737 0179">010 737 0179</a>
-                </h5>
-                <h5><a class="hover:text-[#f0bebb] duration-300"
-                        href="mailto:reservations@seoulsista.nl">reservations@seoulsista.nl</a></h5>
-                <h5 class="mt-3">Grand Slam Holding BV</h5>
-                <h5>KVK: 69461546</h5>
-            </div>
-            <div class="text-white self-center">
-                <h4 class="opacity-75">© 2023 SEOUL SISTA.</h4>
-                <h4>Site built by Maddox, Jasmine, Emily</h4>
-            </div>
-        </div>
-
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

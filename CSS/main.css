@@ -1,17 +1,27 @@
 .link-underline {
-    border-bottom-width: 0;
-    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
-    background-size: 0 3px;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 300ms ease-in-out;
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 300ms ease-in-out;
 }
 
 .link-underline-black {
-    background-image: linear-gradient(transparent, transparent), linear-gradient(#f0bebb, #f0bebb)
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#f0bebb, #f0bebb);
 }
 
 .link-underline:hover {
-    background-size: 100% 3px;
-    background-position: 0 100%;
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
+
+.neonText {
+  color: #fef8f8;
+
+  text-shadow: 0 0 7px #084434, 0 0 10px #fff, 0 0 21px #084434,
+    0 0 42px #084434, 0 0 82px #084434, 0 0 92px #084434, 0 0 102px #084434,
+    0 0 151px #084434;
 }
